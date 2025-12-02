@@ -83,11 +83,16 @@
   ],
   "hackableServers": [
     "n00dles",
-    "foodnstuff"
+    "foodnstuff",
+    "sigma-cosmetics",
+    "joesguns",
+    "hong-fang-tea",
+    "harakiri-sushi",
+    "nectar-net"
   ],
   "purchasedServers": [
     "home"
   ],
-  "totalRamAvailable": 116.75,
-  "lastScan": 1764689022827
+  "totalRamAvailable": 5.549999999999997,
+  "lastScan": 1764691052481
 }

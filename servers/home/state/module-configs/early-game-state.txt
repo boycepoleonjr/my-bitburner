@@ -1,0 +1,116 @@
+{
+  "isActive": true,
+  "startTime": 1764690357718,
+  "lastUpdate": 1764691093340,
+  "currentPhase": "hacking",
+  "phaseStartTime": 1764690702988,
+  "phaseTransitionHistory": [
+    {
+      "from": "training",
+      "to": "hacking",
+      "timestamp": 1764690702988,
+      "reason": "Thresholds triggered phase change"
+    }
+  ],
+  "trainingState": {
+    "isTraining": false,
+    "startingLevel": 1,
+    "currentLevel": 19,
+    "levelsGained": 18,
+    "trainingStartTime": 1764690372746,
+    "totalTrainingTime": 315230
+  },
+  "hackingState": {
+    "activeTargets": [
+      {
+        "hostname": "foodnstuff",
+        "moneyAvailable": 800000,
+        "moneyMax": 4000000,
+        "securityLevel": 8.100000000000001,
+        "minSecurityLevel": 3,
+        "requiredHackLevel": 1,
+        "hackChance": 1,
+        "moneyPerSecond": 860.3204943467845,
+        "priority": 860.3204943467845
+      },
+      {
+        "hostname": "sigma-cosmetics",
+        "moneyAvailable": 920000,
+        "moneyMax": 4600000,
+        "securityLevel": 8.100000000000001,
+        "minSecurityLevel": 3,
+        "requiredHackLevel": 5,
+        "hackChance": 1,
+        "moneyPerSecond": 768.2782630908926,
+        "priority": 768.2782630908926
+      },
+      {
+        "hostname": "joesguns",
+        "moneyAvailable": 1000000,
+        "moneyMax": 5000000,
+        "securityLevel": 14.100000000000001,
+        "minSecurityLevel": 5,
+        "requiredHackLevel": 10,
+        "hackChance": 0.9393565866666667,
+        "moneyPerSecond": 443.25410670977294,
+        "priority": 443.25410670977294
+      }
+    ],
+    "deployedPIDs": {
+      "foodnstuff": [
+        7,
+        8,
+        9
+      ],
+      "sigma-cosmetics": [
+        10,
+        11,
+        12
+      ],
+      "joesguns": [
+        13,
+        14,
+        15
+      ]
+    },
+    "deployedGrowPIDs": {},
+    "deployedHackPIDs": {},
+    "lastTargetRefresh": 1764691003257,
+    "moneyEarned": 0,
+    "totalOperations": 1,
+    "previousMoney": 1179
+  },
+  "ramExpansionState": {
+    "purchasedServers": [],
+    "lastPurchaseTime": 0,
+    "totalServersOwned": 0,
+    "totalRamPurchased": 0,
+    "homeRamUpgrades": 0,
+    "lastHomeUpgradeTime": 0,
+    "totalMoneySpent": 0
+  },
+  "currentAllocation": {
+    "moduleName": "early-game",
+    "allocatedRam": 100,
+    "serverAllocations": {
+      "foodnstuff": 16,
+      "sigma-cosmetics": 16,
+      "joesguns": 16,
+      "hong-fang-tea": 16,
+      "harakiri-sushi": 16,
+      "nectar-net": 16,
+      "n00dles": 4
+    }
+  },
+  "statistics": {
+    "totalMoneyEarned": 0,
+    "totalMoneySpent": 0,
+    "totalLevelsGained": 18,
+    "totalRamAcquired": 0,
+    "phaseDurations": {
+      "training": 345270
+    },
+    "operationCounts": {},
+    "averageMoneyPerSecond": 0
+  }
+}

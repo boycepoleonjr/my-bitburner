@@ -14,8 +14,8 @@
         "optimalRamRequired": 256
       },
       "priority": 80,
-      "status": "running",
-      "lastStatusUpdate": 1764689052857,
+      "status": "error",
+      "lastStatusUpdate": 1764691103142,
       "ramAllocation": {
         "requested": 4,
         "allocated": 0,
@@ -24,7 +24,50 @@
       "pid": 2,
       "controlPort": 10,
       "statusPort": 30
+    },
+    "early-game": {
+      "name": "early-game",
+      "scriptPath": "/modules/early-game.ts",
+      "config": {
+        "enabled": true,
+        "priority": 95,
+        "minRamRequired": 8,
+        "optimalRamRequired": 128,
+        "updateInterval": 15000,
+        "trainingMinLevel": 20,
+        "trainingMaxLevel": 50,
+        "trainingUniversity": "Rothman University",
+        "trainingCourse": "Study Computer Science",
+        "moneyStartThreshold": 1000000,
+        "moneyTargetAmount": 10000000,
+        "moneyReserve": 100000,
+        "maxConcurrentTargets": 3,
+        "minTargetMoney": 100000,
+        "securityThreshold": 5,
+        "moneyThreshold": 0.5,
+        "targetRefreshInterval": 300000,
+        "purchasedServerPrefix": "pserv-",
+        "purchasedServerStartRam": 8,
+        "purchasedServerMaxCount": 25,
+        "purchasedServerCostThreshold": 0.1,
+        "homeRamUpgradeCostThreshold": 0.15,
+        "homeRamUpgradePriority": false,
+        "enableComponentLogs": true,
+        "componentLogMaxEntries": 500,
+        "logLevel": 1
+      },
+      "priority": 95,
+      "status": "running",
+      "controlPort": 13,
+      "statusPort": 33,
+      "lastStatusUpdate": 1764691102619,
+      "ramAllocation": {
+        "requested": 8,
+        "allocated": 0,
+        "actual": 0
+      },
+      "pid": 6
     }
   },
-  "lastUpdate": 1764689052857
+  "lastUpdate": 1764691103142
 }

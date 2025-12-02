@@ -1,14 +1,14 @@
 {
   "isActive": true,
   "startTime": 1764645212344,
-  "lastUpdate": 1764689052863,
-  "lastNetworkScan": 1764689022828,
+  "lastUpdate": 1764691092613,
+  "lastNetworkScan": 1764691052482,
   "statistics": {
-    "uptime": 43840519,
-    "modulesManaged": 1,
+    "uptime": 45880268,
+    "modulesManaged": 2,
     "totalOperations": 0,
-    "networkResources": 116.75,
-    "utilization": 85.65310492505354,
+    "networkResources": 5.549999999999997,
+    "utilization": 96.57170449058427,
     "moduleRestarts": 1
   }
 }

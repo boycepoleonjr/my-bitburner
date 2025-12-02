@@ -102,14 +102,55 @@ const DEFAULT_CONFIG: DaemonConfig = {
 
 const BUILTIN_MODULES = [
   {
+    name: 'early-game',
+    scriptPath: '/modules/early-game.ts',
+    priority: 95,
+    controlPort: PORT_ALLOCATION.SINGULARITY_AUTOMATION_CONTROL,
+    statusPort: PORT_ALLOCATION.SINGULARITY_AUTOMATION_STATUS,
+    enabled: true,
+    config: {
+      enabled: true,
+      priority: 95,
+      minRamRequired: 8,
+      optimalRamRequired: 128,
+      updateInterval: 15000,
+
+      trainingMinLevel: 20,
+      trainingMaxLevel: 50,
+      trainingUniversity: "Rothman University",
+      trainingCourse: "Study Computer Science",
+
+      moneyStartThreshold: 1000000,
+      moneyTargetAmount: 10000000,
+      moneyReserve: 100000,
+
+      maxConcurrentTargets: 3,
+      minTargetMoney: 100000,
+      securityThreshold: 5,
+      moneyThreshold: 0.5,
+      targetRefreshInterval: 300000,
+
+      purchasedServerPrefix: "pserv-",
+      purchasedServerStartRam: 8,
+      purchasedServerMaxCount: 25,
+      purchasedServerCostThreshold: 0.1,
+      homeRamUpgradeCostThreshold: 0.15,
+      homeRamUpgradePriority: false,
+
+      enableComponentLogs: true,
+      componentLogMaxEntries: 500,
+      logLevel: 1,
+    }
+  },
+  {
     name: 'xp-farmer',
     scriptPath: '/modules/xp-farmer.ts',
     priority: 80,
     controlPort: PORT_ALLOCATION.XP_FARMER_CONTROL,
     statusPort: PORT_ALLOCATION.XP_FARMER_STATUS,
-    enabled: true,
+    enabled: false,  // Disabled by default - early-game has priority
     config: {
-      enabled: true,
+      enabled: false,
       priority: 80,
       maxConcurrentTargets: 5,
       updateInterval: 30000,

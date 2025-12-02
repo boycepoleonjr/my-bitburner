@@ -1,15 +1,1 @@
-[
-  {
-    "moduleName": "xp-farmer",
-    "allocatedRam": 100,
-    "serverAllocations": {
-      "foodnstuff": 16,
-      "sigma-cosmetics": 16,
-      "joesguns": 16,
-      "hong-fang-tea": 16,
-      "harakiri-sushi": 16,
-      "nectar-net": 16,
-      "n00dles": 4
-    }
-  }
-]
+[]
