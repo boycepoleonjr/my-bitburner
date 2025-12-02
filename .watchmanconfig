@@ -1,0 +1,13 @@
+{
+  "ignore_dirs": [
+    "node_modules",
+    "build",
+    ".git"
+  ],
+  "ignore_patterns": [
+    "**/*.tmp.*",
+    "**/.*",
+    "**/*~",
+    "**/~*"
+  ]
+}

@@ -1,0 +1,257 @@
+# Daemon Orchestrator - Quick Start Guide
+
+## File Location
+**/home/daemon.ts**
+
+## How to Run
+
+### Basic Usage
+```
+// In Bitburner terminal:
+run daemon.ts
+```
+
+### What Happens on Startup
+
+1. **Initialization** (1-2 seconds)
+- Loads configuration from /state/daemon-config.txt
+- Initializes or restores daemon state
+- Sets up logging system
+
+2. **Network Discovery** (2-5 seconds)
+- Scans entire network
+- Attempts to gain root on all servers
+- Distributes worker scripts (hack.ts, grow.ts, weaken.ts)
+- Calculates available RAM
+
+3. **Module Registration** (<1 second)
+- Registers built-in modules (xp-farmer)
+- Stores module metadata in registry
+
+4. **Module Startup** (2-3 seconds)
+- Starts enabled modules in daemon-managed mode
+- Sends initial configuration via control ports
+- Waits for modules to report ready
+
+5. **Main Loop** (runs forever)
+- Every 10 seconds: collect status, allocate resources, update stats
+- Every 60 seconds: rescan network for new servers
+- Continuous: monitor module health, auto-recover failures
+
+## What You'll See
+
+### Console Output
+```
+=== DAEMON ORCHESTRATOR STARTING ===
+Start time: 2025-12-01T21:50:00.000Z
+Log level: INFO
+============================================================
+[21:50:00] [INFO] [Daemon] Discovering and preparing network...
+[21:50:01] [INFO] [Daemon] Network ready: 23 rooted servers, 512.00GB available
+[21:50:01] [INFO] [Daemon] Registering built-in modules...
+[21:50:01] [INFO] [Daemon] Registered module: xp-farmer
+[21:50:01] [INFO] [Daemon] Starting initial modules...
+[21:50:01] [INFO] [Daemon] Starting module: xp-farmer
+[21:50:02] [INFO] [Daemon] Started module xp-farmer (PID 12345)
+[21:50:02] [INFO] [Daemon] Entering main daemon loop...
+[21:50:10] [INFO] [Daemon] Status: 1/1 modules running, 512.00GB network RAM, 45.2% utilized, uptime 10s
+```
+
+### State Files Created
+- /state/daemon-config.txt - Configuration
+- /state/daemon-state.txt - Current daemon state
+- /state/module-registry.txt - Module metadata
+- /state/network-state.txt - Network topology
+- /state/resource-allocation.txt - RAM allocations
+- /state/module-configs/xp-farmer-config.txt - XP farmer config
+- /state/module-configs/xp-farmer-state.txt - XP farmer state
+
+## Default Configuration
+
+```
+{
+updateInterval: 10000, // Main loop runs every 10 seconds
+networkScanInterval: 60000, // Network rescan every 60 seconds
+moduleStatusTimeout: 30000, // Module timeout after 30 seconds
+enableAutoRecovery: true, // Auto-restart failed modules
+reserveHomeRam: 32, // Reserve 32GB on home server
+logLevel: INFO, // INFO level logging
+autoLaunchDashboard: false // Don't auto-launch React UIs
+}
+```
+
+## Customizing Configuration
+
+Edit /state/daemon-config.txt:
+```
+{
+"updateInterval": 5000,
+"networkScanInterval": 120000,
+"enableAutoRecovery": true,
+"reserveHomeRam": 64,
+"logLevel": 1,
+"autoLaunchDashboard": false
+}
+```
+
+Then restart the daemon for changes to take effect.
+
+## Monitoring
+
+### Check Daemon Status
+```
+// View state file
+cat /state/daemon-state.txt
+
+// Check running processes
+ps | grep daemon
+
+// View module registry
+cat /state/module-registry.txt
+```
+
+### Check Module Status
+```
+// XP Farmer state
+cat /state/module-configs/xp-farmer-state.txt
+
+// Resource allocations
+cat /state/resource-allocation.txt
+
+// Network state
+cat /state/network-state.txt
+```
+
+## Troubleshooting
+
+### Daemon Won't Start
+- Check if another instance is running: ps | grep daemon
+- Kill old instance: kill daemon.ts
+- Check available RAM on home server
+- Verify all core files exist in core/
+
+### Module Won't Start
+- Check module config enabled: cat /state/module-registry.txt
+- Verify module script exists: ls modules/
+- Check for errors in daemon log output
+- Ensure sufficient RAM available
+
+### Auto-Recovery Not Working
+- Verify config.enableAutoRecovery is true
+- Check if module is marked as enabled in registry
+- Review daemon logs for recovery attempts
+- Ensure module script is not corrupted
+
+### Network Issues
+- Manually run network scan: run core/network-manager.ts
+- Check if worker scripts exist: ls tools/
+- Verify port opener programs available
+
+## Advanced Usage
+
+### Stopping the Daemon
+```
+// Kill the daemon process
+kill daemon.ts
+
+// Or get PID and kill
+ps
+kill [PID]
+```
+
+### Adding New Modules
+Edit BUILTIN_MODULES in daemon.ts to add new modules.
+Each module needs:
+- name (unique identifier)
+- scriptPath (path to module script)
+- config (module-specific configuration)
+- priority (for resource allocation)
+- controlPort (for commands)
+- statusPort (for status updates)
+- enabled flag
+
+### Changing Log Level
+LogLevel values:
+- 0 = DEBUG (verbose)
+- 1 = INFO (default)
+- 2 = WARN
+- 3 = ERROR (quiet)
+
+### Enabling Dashboards
+Set autoLaunchDashboard: true in config to auto-launch React UIs on startup.
+
+## Performance Notes
+
+- RAM Usage: Daemon itself uses ~2GB on home server
+- CPU Impact: Negligible (sleeps most of the time)
+- Network Scans: 2-5 seconds every 60 seconds
+- Module Overhead: Each module adds ~2GB on home
+- State File I/O: Writes every 10 seconds (minimal impact)
+
+## What's Next
+
+1. Monitor daemon operation for a few cycles
+2. Check that XP farmer is running and gaining XP
+3. Review resource allocations in /state/resource-allocation.txt
+4. Consider enabling dashboards if you have spare RAM
+5. Add additional modules as needed
+
+## Architecture Overview
+
+The daemon orchestrator is the central coordinator for all automation:
+
+- MODULE REGISTRY: Tracks all registered modules and their states
+- NETWORK MANAGER: Discovers servers, gains root, distributes scripts
+- RESOURCE ALLOCATOR: Priority-based RAM allocation across network
+- LIFECYCLE MANAGER: Start, stop, pause, resume modules
+- STATUS MONITOR: Collects module health and resource requests
+- AUTO-RECOVERY: Automatically restarts failed modules
+- PORT COMMUNICATION: Modules communicate via NetScript ports
+- FILE PERSISTENCE: All state saved to /state/ directory
+
+## Module Communication Protocol
+
+### Control Messages (Daemon -> Module)
+- start: Begin operations
+- stop: Shutdown gracefully
+- pause: Suspend operations
+- resume: Resume from pause
+- config_update: Update configuration
+- resource_allocation: New RAM allocation
+
+### Status Messages (Module -> Daemon)
+- status_update: Current state, health, metrics
+- resource_request: RAM requirements
+- error: Error reports
+- statistics: Performance metrics
+
+## Key Functions
+
+- loadDaemonConfig() - Load configuration
+- initializeDaemonState() - Initialize state
+- discoverAndPrepareNetwork() - Initial network scan
+- registerBuiltInModules() - Register modules
+- startModule() - Launch module in daemon mode
+- stopModule() - Graceful shutdown
+- collectModuleStatuses() - Gather status updates
+- recoverFailedModules() - Auto-restart failed modules
+- performResourceAllocation() - Allocate RAM by priority
+- updateDaemonStatistics() - Update metrics
+- persistDaemonState() - Save state to disk
+
+## Integration Points
+
+All core systems are integrated:
+- core/module-registry.ts - Module tracking
+- core/network-manager.ts - Network operations
+- core/resource-allocator.ts - RAM allocation
+- modules/module-interface.ts - Communication protocol
+- ns-utils.ts - Utility functions
+
+Modules currently available:
+- modules/xp-farmer.ts - XP farming automation
+
+Worker scripts:
+- tools/weaken.ts
+- tools/hack.ts
+- tools/grow.ts

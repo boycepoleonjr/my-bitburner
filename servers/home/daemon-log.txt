@@ -1,0 +1,638 @@
+[
+  {
+    "timestamp": 1764645212338,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Loading daemon configuration"
+  },
+  {
+    "timestamp": 1764645212340,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"autoLaunchDashboard\":false}"
+  },
+  {
+    "timestamp": 1764645212343,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Initializing daemon state"
+  },
+  {
+    "timestamp": 1764645212344,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Daemon state initialized"
+  },
+  {
+    "timestamp": 1764645212344,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Discovering and preparing network"
+  },
+  {
+    "timestamp": 1764645212358,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
+  },
+  {
+    "timestamp": 1764645212360,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Distributed worker scripts to 0 servers"
+  },
+  {
+    "timestamp": 1764645212360,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Registering built-in modules"
+  },
+  {
+    "timestamp": 1764645212361,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Registered module: xp-farmer"
+  },
+  {
+    "timestamp": 1764645212362,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting initial modules"
+  },
+  {
+    "timestamp": 1764645212362,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764645213487,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Started module xp-farmer with PID 10"
+  },
+  {
+    "timestamp": 1764645215489,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Entering main loop"
+  },
+  {
+    "timestamp": 1764645215536,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764645225552,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764645235566,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764645245574,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764646351649,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Loading daemon configuration"
+  },
+  {
+    "timestamp": 1764646351650,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"autoLaunchDashboard\":false}"
+  },
+  {
+    "timestamp": 1764646351650,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Initializing daemon state"
+  },
+  {
+    "timestamp": 1764646351650,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Restoring previous daemon state"
+  },
+  {
+    "timestamp": 1764646351650,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Daemon state initialized"
+  },
+  {
+    "timestamp": 1764646351650,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Discovering and preparing network"
+  },
+  {
+    "timestamp": 1764646351655,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
+  },
+  {
+    "timestamp": 1764646351657,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Distributed worker scripts to 0 servers"
+  },
+  {
+    "timestamp": 1764646351657,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Registering built-in modules"
+  },
+  {
+    "timestamp": 1764646351657,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Module already registered: xp-farmer"
+  },
+  {
+    "timestamp": 1764646351657,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting initial modules"
+  },
+  {
+    "timestamp": 1764646351657,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764646351658,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 10"
+  },
+  {
+    "timestamp": 1764646353175,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Started module xp-farmer with PID 523"
+  },
+  {
+    "timestamp": 1764646355178,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Entering main loop"
+  },
+  {
+    "timestamp": 1764646355198,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764646365215,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764646375219,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764651429155,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Loading daemon configuration"
+  },
+  {
+    "timestamp": 1764651429157,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"autoLaunchDashboard\":false}"
+  },
+  {
+    "timestamp": 1764651429157,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Initializing daemon state"
+  },
+  {
+    "timestamp": 1764651429157,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Restoring previous daemon state"
+  },
+  {
+    "timestamp": 1764651429157,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Daemon state initialized"
+  },
+  {
+    "timestamp": 1764651429157,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Discovering and preparing network"
+  },
+  {
+    "timestamp": 1764651429171,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
+  },
+  {
+    "timestamp": 1764651429175,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Distributed worker scripts to 0 servers"
+  },
+  {
+    "timestamp": 1764651429175,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Registering built-in modules"
+  },
+  {
+    "timestamp": 1764651429176,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Module already registered: xp-farmer"
+  },
+  {
+    "timestamp": 1764651429176,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting initial modules"
+  },
+  {
+    "timestamp": 1764651429176,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764651429176,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 523"
+  },
+  {
+    "timestamp": 1764651430694,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Started module xp-farmer with PID 525"
+  },
+  {
+    "timestamp": 1764651432699,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Entering main loop"
+  },
+  {
+    "timestamp": 1764651432709,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764651442720,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764651452752,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764651462754,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764651472766,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764651482774,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764651492791,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764651502804,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764651512818,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764651522824,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764651522824,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 1h 45m 10s, Modules 1, RAM 8418.40TB, Util 0.0%"
+  },
+  {
+    "timestamp": 1764651786467,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Loading daemon configuration"
+  },
+  {
+    "timestamp": 1764651786469,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"autoLaunchDashboard\":false}"
+  },
+  {
+    "timestamp": 1764651786469,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Initializing daemon state"
+  },
+  {
+    "timestamp": 1764651786469,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Restoring previous daemon state"
+  },
+  {
+    "timestamp": 1764651786469,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Daemon state initialized"
+  },
+  {
+    "timestamp": 1764651786469,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Discovering and preparing network"
+  },
+  {
+    "timestamp": 1764651786479,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
+  },
+  {
+    "timestamp": 1764651786481,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Distributed worker scripts to 0 servers"
+  },
+  {
+    "timestamp": 1764651786481,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Registering built-in modules"
+  },
+  {
+    "timestamp": 1764651786481,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Module already registered: xp-farmer"
+  },
+  {
+    "timestamp": 1764651786481,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting initial modules"
+  },
+  {
+    "timestamp": 1764651786481,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764651786481,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 525"
+  },
+  {
+    "timestamp": 1764651787995,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Started module xp-farmer with PID 528"
+  },
+  {
+    "timestamp": 1764651789999,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Entering main loop"
+  },
+  {
+    "timestamp": 1764651790026,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764651800034,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Error in resource allocation: TypeError: Cannot read properties of undefined (reading 'toFixed')"
+  },
+  {
+    "timestamp": 1764652407564,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Loading daemon configuration"
+  },
+  {
+    "timestamp": 1764652407567,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"enableComponentLogs\":true,\"componentLogMaxEntries\":500,\"autoLaunchDashboard\":false}"
+  },
+  {
+    "timestamp": 1764652407567,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Initializing daemon state"
+  },
+  {
+    "timestamp": 1764652407567,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Restoring previous daemon state"
+  },
+  {
+    "timestamp": 1764652407567,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Daemon state initialized"
+  },
+  {
+    "timestamp": 1764652407568,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Discovering and preparing network"
+  },
+  {
+    "timestamp": 1764652407574,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
+  },
+  {
+    "timestamp": 1764652407576,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Distributed worker scripts to 0 servers"
+  },
+  {
+    "timestamp": 1764652407576,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Registering built-in modules"
+  },
+  {
+    "timestamp": 1764652407576,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Module already registered: xp-farmer"
+  },
+  {
+    "timestamp": 1764652407576,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting initial modules"
+  },
+  {
+    "timestamp": 1764652407576,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764652407576,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 528"
+  },
+  {
+    "timestamp": 1764652409219,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Started module xp-farmer with PID 531"
+  },
+  {
+    "timestamp": 1764652411224,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Entering main loop"
+  },
+  {
+    "timestamp": 1764652445747,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Loading daemon configuration"
+  },
+  {
+    "timestamp": 1764652445749,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"enableComponentLogs\":true,\"componentLogMaxEntries\":500,\"autoLaunchDashboard\":false}"
+  },
+  {
+    "timestamp": 1764652445749,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Initializing daemon state"
+  },
+  {
+    "timestamp": 1764652445749,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Restoring previous daemon state"
+  },
+  {
+    "timestamp": 1764652445749,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Daemon state initialized"
+  },
+  {
+    "timestamp": 1764652445749,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Discovering and preparing network"
+  },
+  {
+    "timestamp": 1764652445753,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
+  },
+  {
+    "timestamp": 1764652445754,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Distributed worker scripts to 0 servers"
+  },
+  {
+    "timestamp": 1764652445754,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Registering built-in modules"
+  },
+  {
+    "timestamp": 1764652445754,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Module already registered: xp-farmer"
+  },
+  {
+    "timestamp": 1764652445755,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting initial modules"
+  },
+  {
+    "timestamp": 1764652445755,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764652445755,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 531"
+  }
+]

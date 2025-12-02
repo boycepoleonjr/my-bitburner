@@ -1,0 +1,28 @@
+{
+  "modules": {
+    "xp-farmer": {
+      "name": "xp-farmer",
+      "scriptPath": "/modules/xp-farmer.ts",
+      "config": {
+        "enabled": true,
+        "priority": 80,
+        "maxConcurrentTargets": 5,
+        "updateInterval": 30000,
+        "targetRefreshInterval": 300000,
+        "minWeakenTime": 60000,
+        "minRamRequired": 4,
+        "optimalRamRequired": 256
+      },
+      "priority": 80,
+      "status": "starting",
+      "lastStatusUpdate": 1764652408209,
+      "ramAllocation": {
+        "requested": 4,
+        "allocated": 0,
+        "actual": 0
+      },
+      "pid": 531
+    }
+  },
+  "lastUpdate": 1764652408209
+}

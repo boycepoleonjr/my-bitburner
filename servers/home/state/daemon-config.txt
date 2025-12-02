@@ -1,0 +1,11 @@
+{
+  "updateInterval": 10000,
+  "networkScanInterval": 60000,
+  "moduleStatusTimeout": 30000,
+  "enableAutoRecovery": true,
+  "reserveHomeRam": 32,
+  "logLevel": 1,
+  "enableComponentLogs": true,
+  "componentLogMaxEntries": 500,
+  "autoLaunchDashboard": false
+}

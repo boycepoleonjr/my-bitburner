@@ -1,0 +1,164 @@
+[
+  {
+    "timestamp": 1764652407567,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"enableComponentLogs\":true,\"componentLogMaxEntries\":500,\"autoLaunchDashboard\":false}"
+  },
+  {
+    "timestamp": 1764652407567,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Initializing daemon state"
+  },
+  {
+    "timestamp": 1764652407567,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Restoring previous daemon state"
+  },
+  {
+    "timestamp": 1764652407567,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Daemon state initialized"
+  },
+  {
+    "timestamp": 1764652407568,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Discovering and preparing network"
+  },
+  {
+    "timestamp": 1764652407574,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
+  },
+  {
+    "timestamp": 1764652407576,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Distributed worker scripts to 0 servers"
+  },
+  {
+    "timestamp": 1764652407576,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Registering built-in modules"
+  },
+  {
+    "timestamp": 1764652407576,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Module already registered: xp-farmer"
+  },
+  {
+    "timestamp": 1764652407576,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting initial modules"
+  },
+  {
+    "timestamp": 1764652407576,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764652407576,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 528"
+  },
+  {
+    "timestamp": 1764652409219,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Started module xp-farmer with PID 531"
+  },
+  {
+    "timestamp": 1764652411224,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Entering main loop"
+  },
+  {
+    "timestamp": 1764652445747,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Loading daemon configuration"
+  },
+  {
+    "timestamp": 1764652445749,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"enableComponentLogs\":true,\"componentLogMaxEntries\":500,\"autoLaunchDashboard\":false}"
+  },
+  {
+    "timestamp": 1764652445749,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Initializing daemon state"
+  },
+  {
+    "timestamp": 1764652445749,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Restoring previous daemon state"
+  },
+  {
+    "timestamp": 1764652445749,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Daemon state initialized"
+  },
+  {
+    "timestamp": 1764652445749,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Discovering and preparing network"
+  },
+  {
+    "timestamp": 1764652445753,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
+  },
+  {
+    "timestamp": 1764652445754,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Distributed worker scripts to 0 servers"
+  },
+  {
+    "timestamp": 1764652445754,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Registering built-in modules"
+  },
+  {
+    "timestamp": 1764652445754,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Module already registered: xp-farmer"
+  },
+  {
+    "timestamp": 1764652445755,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting initial modules"
+  },
+  {
+    "timestamp": 1764652445755,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764652445755,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 531"
+  }
+]

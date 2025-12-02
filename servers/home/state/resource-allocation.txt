@@ -1,0 +1,9 @@
+[
+  {
+    "moduleName": "xp-farmer",
+    "allocatedRam": 256,
+    "serverAllocations": {
+      "fulcrumtech": 256
+    }
+  }
+]
