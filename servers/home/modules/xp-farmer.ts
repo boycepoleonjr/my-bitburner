@@ -663,7 +663,6 @@ function sendStatusUpdate(ns: NS, statusPort: number, state: XPFarmerState, conf
                 successRate: 1.0,
                 customMetrics: {
                     totalXPGained: state.statistics.totalXPGained,
-                    totalMoneyGained: state.statistics.totalMoneyGained,
                     averageXPPerSecond: state.statistics.averageXPPerSecond,
                     hackingLevelGained: state.statistics.hackingLevelGained,
                     activeTargets: state.activeTargets.length
@@ -721,7 +720,7 @@ async function runStandaloneMode(ns: NS, config: XPFarmerConfig): Promise<void> 
             }
 
             // Check if we need to deploy (first run or targets changed)
-            if (Object.keys(state.deployedPIDs).length === 0 && Object.keys(state.deployedHackPIDs).length === 0) {
+            if (Object.keys(state.deployedPIDs).length === 0) {
                 shouldRedeploy = true;
             }
 
@@ -732,17 +731,15 @@ async function runStandaloneMode(ns: NS, config: XPFarmerConfig): Promise<void> 
             // Only redeploy if targets changed or no operations running
             if (shouldRedeploy) {
                 ns.print(`INFO: Available RAM: ${allocation.allocatedRam.toFixed(2)}GB across ${Object.keys(allocation.serverAllocations).length} servers`);
-                ns.print(`INFO: Hack/Weaken split: ${(config.hackRatio * 100).toFixed(0)}% hack, ${((1 - config.hackRatio) * 100).toFixed(0)}% weaken`);
 
                 // Kill old operations only when redeploying
-                if (Object.keys(state.deployedPIDs).length > 0 || Object.keys(state.deployedHackPIDs).length > 0) {
-                    killAllDeployedOperations(ns, state.deployedPIDs, state.deployedHackPIDs);
+                if (Object.keys(state.deployedPIDs).length > 0) {
+                    killAllDeployedOperations(ns, state.deployedPIDs);
                 }
 
                 // Deploy new operations
                 state.activeTargets = selectedTargets;
-                state.deployedHackPIDs = deployHackOperations(ns, selectedTargets, allocation, config.hackRatio);
-                state.deployedPIDs = deployWeakenOperations(ns, selectedTargets, allocation, config.hackRatio);
+                state.deployedPIDs = deployWeakenOperations(ns, selectedTargets, allocation);
                 state.statistics.totalOperations++;
                 lastDeployment = now;
             }
@@ -840,21 +837,20 @@ async function runDaemonMode(
                 }
 
                 // Check if we need to deploy (first run)
-                if (Object.keys(state.deployedPIDs).length === 0 && Object.keys(state.deployedHackPIDs).length === 0) {
+                if (Object.keys(state.deployedPIDs).length === 0) {
                     shouldRedeploy = true;
                 }
 
                 // Only redeploy when necessary
                 if (shouldRedeploy) {
                     // Kill old operations only when redeploying
-                    if (Object.keys(state.deployedPIDs).length > 0 || Object.keys(state.deployedHackPIDs).length > 0) {
-                        killAllDeployedOperations(ns, state.deployedPIDs, state.deployedHackPIDs);
+                    if (Object.keys(state.deployedPIDs).length > 0) {
+                        killAllDeployedOperations(ns, state.deployedPIDs);
                     }
 
                     // Deploy new operations
                     state.activeTargets = selectedTargets;
-                    state.deployedHackPIDs = deployHackOperations(ns, selectedTargets, allocation, config.hackRatio);
-                    state.deployedPIDs = deployWeakenOperations(ns, selectedTargets, allocation, config.hackRatio);
+                    state.deployedPIDs = deployWeakenOperations(ns, selectedTargets, allocation);
                     state.statistics.totalOperations++;
                     lastDeployment = now;
                 }

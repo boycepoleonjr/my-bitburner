@@ -5,6 +5,7 @@
   "updateInterval": 30000,
   "targetRefreshInterval": 300000,
   "minWeakenTime": 60000,
+  "hackRatio": 0.3,
   "enableComponentLogs": true,
   "componentLogMaxEntries": 500,
   "logLevel": 1,

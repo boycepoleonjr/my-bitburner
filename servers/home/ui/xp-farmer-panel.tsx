@@ -60,10 +60,8 @@ interface XPFarmerState {
     serverAllocations: Record<string, number>;
   } | null;
   deployedPIDs: Record<string, number[]>;
-  deployedHackPIDs?: Record<string, number[]>;
   statistics: {
     totalXPGained: number;
-    totalMoneyGained?: number;
     totalOperations: number;
     averageXPPerSecond: number;
     uptimeSeconds: number;
@@ -304,7 +302,7 @@ function ProgressBar({ player }: { player: any }) {
 function StatsGrid({ state }: { state: XPFarmerState }) {
   const containerStyle: React.CSSProperties = {
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr 1fr',
+    gridTemplateColumns: '1fr 1fr',
     gap: '12px',
     padding: '16px',
     borderBottom: `1px solid ${COLORS.border}`,
@@ -324,7 +322,7 @@ function StatsGrid({ state }: { state: XPFarmerState }) {
   };
 
   const statValueStyle: React.CSSProperties = {
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: 'bold',
     color: COLORS.text,
     fontVariantNumeric: 'tabular-nums',
@@ -332,7 +330,6 @@ function StatsGrid({ state }: { state: XPFarmerState }) {
 
   const uptime = (Date.now() - state.startTime) / 1000;
   const totalXP = state.statistics.totalXPGained;
-  const totalMoney = state.statistics.totalMoneyGained || 0;
   const levelsGained = state.statistics.hackingLevelGained;
   const operations = state.statistics.totalOperations;
 
@@ -345,10 +342,6 @@ function StatsGrid({ state }: { state: XPFarmerState }) {
       <div style={statItemStyle}>
         <div style={statLabelStyle}>XP Gained</div>
         <div style={statValueStyle}>{formatNumber(totalXP)}</div>
-      </div>
-      <div style={statItemStyle}>
-        <div style={statLabelStyle}>Money Gained</div>
-        <div style={statValueStyle}>{formatMoney(totalMoney)}</div>
       </div>
       <div style={statItemStyle}>
         <div style={statLabelStyle}>Levels Gained</div>
@@ -503,7 +496,7 @@ function XPFarmerPanel() {
     color: COLORS.text,
     border: `2px solid ${COLORS.border}`,
     borderRadius: 8,
-    width: 600,
+    width: 400,
     maxHeight: '90vh',
     overflow: 'hidden',
     display: 'flex',

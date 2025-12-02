@@ -14,17 +14,17 @@
         "optimalRamRequired": 256
       },
       "priority": 80,
-      "status": "starting",
-      "lastStatusUpdate": 1764656786485,
+      "status": "running",
+      "lastStatusUpdate": 1764689052857,
       "ramAllocation": {
         "requested": 4,
         "allocated": 0,
         "actual": 0
       },
-      "pid": 2838,
+      "pid": 2,
       "controlPort": 10,
       "statusPort": 30
     }
   },
-  "lastUpdate": 1764656786485
+  "lastUpdate": 1764689052857
 }

@@ -5,14 +5,17 @@
  */
 
 export async function main(ns: NS): Promise<void> {
-    const target = ns.args[0] as string;
-    if (!target) {
-        ns.tprint('ERROR: No target specified');
-        return;
-    }
+  const target = ns.args[0] as string;
+  if (!target) {
+    ns.tprint('ERROR: No target specified');
+    return;
+  }
+
+  while (true) {
     await ns.weaken(target);
+  }
 }
 
 export function autocomplete(data: any): string[] {
-    return [...data.servers];
+  return [...data.servers];
 }

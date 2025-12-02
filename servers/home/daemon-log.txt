@@ -910,5 +910,215 @@
     "level": "INFO",
     "component": "Daemon",
     "message": "Status: Uptime 3h 12m 57s, Modules 1, RAM 8418.25TB, Util 0.0%"
+  },
+  {
+    "timestamp": 1764658633354,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Loading daemon configuration"
+  },
+  {
+    "timestamp": 1764658633358,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"enableComponentLogs\":true,\"componentLogMaxEntries\":500,\"autoLaunchDashboard\":false}"
+  },
+  {
+    "timestamp": 1764658633358,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Initializing daemon state"
+  },
+  {
+    "timestamp": 1764658633358,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Restoring previous daemon state"
+  },
+  {
+    "timestamp": 1764658633359,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Daemon state initialized"
+  },
+  {
+    "timestamp": 1764658633359,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Discovering and preparing network"
+  },
+  {
+    "timestamp": 1764658633368,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
+  },
+  {
+    "timestamp": 1764658633369,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Distributed worker scripts to 68 servers"
+  },
+  {
+    "timestamp": 1764658633369,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Registering built-in modules"
+  },
+  {
+    "timestamp": 1764658633370,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Module already registered: xp-farmer"
+  },
+  {
+    "timestamp": 1764658633370,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting initial modules"
+  },
+  {
+    "timestamp": 1764658633370,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764658633371,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2838"
+  },
+  {
+    "timestamp": 1764658635046,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Started module xp-farmer with PID 3008"
+  },
+  {
+    "timestamp": 1764658637049,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Entering main loop"
+  },
+  {
+    "timestamp": 1764658727156,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 3h 45m 14s, Modules 1, RAM 8418.40TB, Util 0.0%"
+  },
+  {
+    "timestamp": 1764658827276,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 3h 46m 54s, Modules 1, RAM 8418.40TB, Util 0.0%"
+  },
+  {
+    "timestamp": 1764658927393,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 3h 48m 35s, Modules 1, RAM 8418.40TB, Util 0.0%"
+  },
+  {
+    "timestamp": 1764659027506,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 3h 50m 15s, Modules 1, RAM 8418.40TB, Util 0.0%"
+  },
+  {
+    "timestamp": 1764659127645,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 3h 51m 55s, Modules 1, RAM 8418.40TB, Util 0.0%"
+  },
+  {
+    "timestamp": 1764689019199,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Loading daemon configuration"
+  },
+  {
+    "timestamp": 1764689019200,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"enableComponentLogs\":true,\"componentLogMaxEntries\":500,\"autoLaunchDashboard\":false}"
+  },
+  {
+    "timestamp": 1764689019201,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Initializing daemon state"
+  },
+  {
+    "timestamp": 1764689019201,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Restoring previous daemon state"
+  },
+  {
+    "timestamp": 1764689019201,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Daemon state initialized"
+  },
+  {
+    "timestamp": 1764689019201,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Discovering and preparing network"
+  },
+  {
+    "timestamp": 1764689019207,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Network discovered: 70 servers, 8 rooted, 123.85GB total RAM"
+  },
+  {
+    "timestamp": 1764689019207,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Distributed worker scripts to 7 servers"
+  },
+  {
+    "timestamp": 1764689019207,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Registering built-in modules"
+  },
+  {
+    "timestamp": 1764689019207,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Module already registered: xp-farmer"
+  },
+  {
+    "timestamp": 1764689019208,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting initial modules"
+  },
+  {
+    "timestamp": 1764689019208,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764689019208,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 3008"
+  },
+  {
+    "timestamp": 1764689020814,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Started module xp-farmer with PID 2"
+  },
+  {
+    "timestamp": 1764689022818,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Entering main loop"
   }
 ]
