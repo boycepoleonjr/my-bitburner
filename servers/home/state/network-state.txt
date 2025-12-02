@@ -290,6 +290,6 @@
     "daemon-23",
     "daemon-24"
   ],
-  "totalRamAvailable": 8418396.75,
-  "lastScan": 1764652445752
+  "totalRamAvailable": 8418246.25,
+  "lastScan": 1764656755936
 }

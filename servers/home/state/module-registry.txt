@@ -15,14 +15,16 @@
       },
       "priority": 80,
       "status": "starting",
-      "lastStatusUpdate": 1764652408209,
+      "lastStatusUpdate": 1764656786485,
       "ramAllocation": {
         "requested": 4,
         "allocated": 0,
         "actual": 0
       },
-      "pid": 531
+      "pid": 2838,
+      "controlPort": 10,
+      "statusPort": 30
     }
   },
-  "lastUpdate": 1764652408209
+  "lastUpdate": 1764656786485
 }

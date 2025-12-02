@@ -1,45 +1,9 @@
 {
   "isActive": true,
   "startTime": 1764645212473,
-  "lastUpdate": 1764652438252,
+  "lastUpdate": 1764658116340,
   "lastTargetRefresh": 0,
-  "activeTargets": [
-    {
-      "hostname": "vitalife",
-      "xpPerSecond": 10.963284046127608,
-      "weakenTime": 61.738047405453784,
-      "xpGain": 676.8517501592814,
-      "requiredHackLevel": 776
-    },
-    {
-      "hostname": "zeus-med",
-      "xpPerSecond": 10.475523700430879,
-      "weakenTime": 61.34942144292233,
-      "xpGain": 642.6673183330552,
-      "requiredHackLevel": 817
-    },
-    {
-      "hostname": "omnia",
-      "xpPerSecond": 9.89467619496093,
-      "weakenTime": 67.02371703346171,
-      "xpGain": 663.1779774287909,
-      "requiredHackLevel": 862
-    },
-    {
-      "hostname": "helios",
-      "xpPerSecond": 9.714834066329253,
-      "weakenTime": 68.26446781291989,
-      "xpGain": 663.1779774287909,
-      "requiredHackLevel": 878
-    },
-    {
-      "hostname": "aerocorp",
-      "xpPerSecond": 9.649049609532426,
-      "weakenTime": 70.1469862369254,
-      "xpGain": 676.8517501592814,
-      "requiredHackLevel": 882
-    }
-  ],
+  "activeTargets": [],
   "currentAllocation": {
     "moduleName": "xp-farmer",
     "allocatedRam": 8418372.9,
@@ -117,11 +81,11 @@
   },
   "deployedPIDs": {},
   "statistics": {
-    "totalXPGained": 2668755600,
-    "totalOperations": 55,
-    "averageXPPerSecond": 369338.1156550733,
-    "uptimeSeconds": 7225.779,
-    "hackingLevelGained": 1,
+    "totalXPGained": 17068349021100,
+    "totalOperations": 84,
+    "averageXPPerSecond": 1322731421.8157566,
+    "uptimeSeconds": 12903.866,
+    "hackingLevelGained": 4329,
     "startingHackingLevel": 10332
   }
 }

@@ -4,7 +4,8 @@
     "description": "my bitburner scripts",
     "main": "index.js",
     "scripts": {
-        "start": "node ./config.mjs"
+        "start": "node ./config.mjs",
+        "logs": "node ./watch-logs.mjs"
     },
     "dependencies": {
         "@types/react": "^18.3.4",

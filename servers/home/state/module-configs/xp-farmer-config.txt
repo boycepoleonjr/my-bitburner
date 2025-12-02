@@ -5,6 +5,9 @@
   "updateInterval": 30000,
   "targetRefreshInterval": 300000,
   "minWeakenTime": 60000,
+  "enableComponentLogs": true,
+  "componentLogMaxEntries": 500,
+  "logLevel": 1,
   "minRamRequired": 4,
   "optimalRamRequired": 256
 }

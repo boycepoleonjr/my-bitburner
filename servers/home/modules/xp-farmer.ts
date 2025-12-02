@@ -1,20 +1,21 @@
 /**
  * XP Farmer Module
- * VERSION: 1.3.0
+ * VERSION: 1.4.0
  * LAST UPDATED: 2025-12-02
  *
  * A specialized module focused on maximizing hacking XP gains through
- * optimized weaken() operations across the entire network.
+ * optimized weaken() and hack() operations across the entire network.
  *
  * Features:
- * - Pure XP focus: Only weaken operations (highest XP/time ratio)
+ * - Dual operations: Hack operations (money + XP + raises security) and weaken operations (XP + lowers security)
  * - Smart targeting: Ranks servers by XP efficiency
  * - Dual mode: Standalone and daemon-managed operation
  * - Full network deployment: Uses all available RAM
- * - Statistics tracking: XP gained, operations, uptime, XP/sec
+ * - Statistics tracking: XP gained, money gained, operations, uptime, XP/sec
  * - State persistence: Config and state saved to files
  *
  * CHANGELOG:
+ * - v1.4.0 (2025-12-02): Added hack operations for raising security and gaining money
  * - v1.3.0 (2025-12-02): Fixed premature script termination - only redeploy on target/allocation changes
  * - v1.2.0 (2025-12-02): Added component logging support
  * - v1.1.0 (2025-12-02): Fixed weaken script path from /tools/ to root
@@ -59,6 +60,7 @@ interface XPFarmerConfig {
     updateInterval: number;
     targetRefreshInterval: number;
     minWeakenTime: number;
+    hackRatio: number; // Percentage of threads to dedicate to hack operations (0.0 to 1.0)
     enableComponentLogs: boolean;
     componentLogMaxEntries: number;
     logLevel: LogLevel;
@@ -74,8 +76,10 @@ interface XPFarmerState {
     activeTargets: XPTarget[];
     currentAllocation: ResourceAllocation | null;
     deployedPIDs: Record<string, number[]>;
+    deployedHackPIDs: Record<string, number[]>;
     statistics: {
         totalXPGained: number;
+        totalMoneyGained: number;
         totalOperations: number;
         averageXPPerSecond: number;
         uptimeSeconds: number;
@@ -92,6 +96,7 @@ const MODULE_NAME = 'xp-farmer';
 const CONFIG_FILE = '/state/module-configs/xp-farmer-config.txt';
 const STATE_FILE = '/state/module-configs/xp-farmer-state.txt';
 const WEAKEN_SCRIPT = '/weaken.ts';
+const HACK_SCRIPT = '/hack.ts';
 
 const DEFAULT_CONFIG: XPFarmerConfig = {
     enabled: true,
@@ -100,6 +105,7 @@ const DEFAULT_CONFIG: XPFarmerConfig = {
     updateInterval: 30000,
     targetRefreshInterval: 300000,
     minWeakenTime: 60000,
+    hackRatio: 0.3, // 30% hack operations, 70% weaken operations
     enableComponentLogs: true,
     componentLogMaxEntries: 500,
     logLevel: LogLevel.INFO,
@@ -228,11 +234,13 @@ function selectBestXPTargets(ns: NS, targets: XPTarget[], maxCount: number): XPT
 
 /**
  * Calculate how to distribute threads across targets based on available RAM
+ * Only used for weaken operations (hackRatio is subtracted from total)
  */
 function calculateThreadAllocation(
     ns: NS,
     targets: XPTarget[],
-    allocation: ResourceAllocation
+    allocation: ResourceAllocation,
+    hackRatio: number
 ): Map<XPTarget, number> {
     const scriptRam = ns.getScriptRam(WEAKEN_SCRIPT);
     if (scriptRam === 0) {
@@ -240,11 +248,12 @@ function calculateThreadAllocation(
         return new Map();
     }
 
-    const totalAvailableRam = allocation.allocatedRam;
+    // Use only the weaken portion of RAM (1 - hackRatio)
+    const totalAvailableRam = allocation.allocatedRam * (1 - hackRatio);
     const totalThreads = Math.floor(totalAvailableRam / scriptRam);
 
     if (totalThreads < 1) {
-        ns.print(`WARN: Not enough RAM for even 1 thread (need ${scriptRam}GB, have ${totalAvailableRam}GB)`);
+        ns.print(`WARN: Not enough RAM for even 1 weaken thread (need ${scriptRam}GB, have ${totalAvailableRam}GB)`);
         return new Map();
     }
 
@@ -272,9 +281,9 @@ function calculateThreadAllocation(
         threadsAssigned += threads;
     }
 
-    ns.print(`INFO: Allocated ${totalThreads} threads across ${targets.length} targets`);
+    ns.print(`INFO: Allocated ${totalThreads} weaken threads across ${targets.length} targets`);
     for (const [target, threads] of threadAllocation) {
-        ns.print(`  ${target.hostname}: ${threads} threads`);
+        ns.print(`  ${target.hostname}: ${threads} weaken threads`);
     }
 
     return threadAllocation;
@@ -282,19 +291,21 @@ function calculateThreadAllocation(
 
 /**
  * Deploy weaken operations across the network
+ * Only uses (1 - hackRatio) of available RAM
  */
 function deployWeakenOperations(
     ns: NS,
     targets: XPTarget[],
-    allocation: ResourceAllocation
+    allocation: ResourceAllocation,
+    hackRatio: number
 ): Record<string, number[]> {
-    const threadAllocation = calculateThreadAllocation(ns, targets, allocation);
+    const threadAllocation = calculateThreadAllocation(ns, targets, allocation, hackRatio);
     const deployedPIDs: Record<string, number[]> = {};
     const scriptRam = ns.getScriptRam(WEAKEN_SCRIPT);
 
-    // Get list of available servers with RAM
+    // Get list of available servers with RAM (adjust for weaken portion only)
     const serverList = Object.entries(allocation.serverAllocations)
-        .map(([hostname, ramGB]) => ({ hostname, ramGB }))
+        .map(([hostname, ramGB]) => ({ hostname, ramGB: ramGB * (1 - hackRatio) }))
         .filter(s => s.ramGB >= scriptRam)
         .sort((a, b) => b.ramGB - a.ramGB); // Deploy to largest servers first
 
@@ -329,7 +340,7 @@ function deployWeakenOperations(
 
         if (pids.length > 0) {
             deployedPIDs[target.hostname] = pids;
-            ns.print(`INFO: Deployed ${totalThreads - threadsRemaining} threads for ${target.hostname} (${pids.length} processes)`);
+            ns.print(`INFO: Deployed ${totalThreads - threadsRemaining} weaken threads for ${target.hostname} (${pids.length} processes)`);
         }
     }
 
@@ -337,15 +348,106 @@ function deployWeakenOperations(
 }
 
 /**
- * Kill all deployed weaken operations
+ * Deploy hack operations across the network
  */
-function killAllDeployedOperations(ns: NS, deployedPIDs: Record<string, number[]>): void {
+function deployHackOperations(
+    ns: NS,
+    targets: XPTarget[],
+    allocation: ResourceAllocation,
+    hackRatio: number
+): Record<string, number[]> {
+    const scriptRam = ns.getScriptRam(HACK_SCRIPT);
+    if (scriptRam === 0) {
+        ns.print(`ERROR: Cannot find ${HACK_SCRIPT} or it has 0 RAM cost`);
+        return {};
+    }
+
+    const deployedPIDs: Record<string, number[]> = {};
+
+    // Calculate total threads for hack operations based on ratio
+    const totalAvailableRam = allocation.allocatedRam * hackRatio;
+    const totalThreads = Math.floor(totalAvailableRam / scriptRam);
+
+    if (totalThreads < 1) {
+        ns.print(`WARN: Not enough RAM for hack operations`);
+        return {};
+    }
+
+    // Distribute threads across targets
+    const threadsPerTarget = Math.floor(totalThreads / targets.length);
+    if (threadsPerTarget < 1) {
+        ns.print(`WARN: Not enough threads for hack operations per target`);
+        return {};
+    }
+
+    // Get list of available servers with RAM
+    const serverList = Object.entries(allocation.serverAllocations)
+        .map(([hostname, ramGB]) => ({ hostname, ramGB: ramGB * hackRatio }))
+        .filter(s => s.ramGB >= scriptRam)
+        .sort((a, b) => b.ramGB - a.ramGB);
+
+    // Deploy hack operations to each target
+    for (const target of targets) {
+        let threadsRemaining = threadsPerTarget;
+        const pids: number[] = [];
+
+        for (const server of serverList) {
+            if (threadsRemaining <= 0) break;
+
+            const maxThreadsOnServer = Math.floor(server.ramGB / scriptRam);
+            const threadsToUse = Math.min(threadsRemaining, maxThreadsOnServer);
+
+            if (threadsToUse < 1) continue;
+
+            // Copy script to server if needed
+            if (!ns.fileExists(HACK_SCRIPT, server.hostname)) {
+                ns.scp(HACK_SCRIPT, server.hostname);
+            }
+
+            // Start the hack script
+            const pid = ns.exec(HACK_SCRIPT, server.hostname, threadsToUse, target.hostname);
+            if (pid > 0) {
+                pids.push(pid);
+                threadsRemaining -= threadsToUse;
+                server.ramGB -= threadsToUse * scriptRam;
+            }
+        }
+
+        if (pids.length > 0) {
+            deployedPIDs[target.hostname] = pids;
+            ns.print(`INFO: Deployed ${threadsPerTarget - threadsRemaining} hack threads for ${target.hostname} (${pids.length} processes)`);
+        }
+    }
+
+    return deployedPIDs;
+}
+
+/**
+ * Kill all deployed operations (both weaken and hack)
+ */
+function killAllDeployedOperations(
+    ns: NS,
+    deployedPIDs: Record<string, number[]>,
+    deployedHackPIDs?: Record<string, number[]>
+): void {
     let killedCount = 0;
 
+    // Kill weaken operations
     for (const [target, pids] of Object.entries(deployedPIDs)) {
         for (const pid of pids) {
             if (ns.kill(pid)) {
                 killedCount++;
+            }
+        }
+    }
+
+    // Kill hack operations
+    if (deployedHackPIDs) {
+        for (const [target, pids] of Object.entries(deployedHackPIDs)) {
+            for (const pid of pids) {
+                if (ns.kill(pid)) {
+                    killedCount++;
+                }
             }
         }
     }
@@ -401,6 +503,13 @@ function initializeState(ns: NS): XPFarmerState {
     // If we have existing state and it's recent, restore it
     if (existingState && existingState.isActive) {
         ns.print(`INFO: Restoring previous state from ${STATE_FILE}`);
+        // Ensure deployedHackPIDs exists for older states
+        if (!existingState.deployedHackPIDs) {
+            existingState.deployedHackPIDs = {};
+        }
+        if (existingState.statistics && !existingState.statistics.totalMoneyGained) {
+            existingState.statistics.totalMoneyGained = 0;
+        }
         return existingState;
     }
 
@@ -413,8 +522,10 @@ function initializeState(ns: NS): XPFarmerState {
         activeTargets: [],
         currentAllocation: null,
         deployedPIDs: {},
+        deployedHackPIDs: {},
         statistics: {
             totalXPGained: 0,
+            totalMoneyGained: 0,
             totalOperations: 0,
             averageXPPerSecond: 0,
             uptimeSeconds: 0,
@@ -489,15 +600,17 @@ function handleControlMessage(ns: NS, message: any, state: XPFarmerState, config
 
         case 'stop':
             state.isActive = false;
-            killAllDeployedOperations(ns, state.deployedPIDs);
+            killAllDeployedOperations(ns, state.deployedPIDs, state.deployedHackPIDs);
             state.deployedPIDs = {};
+            state.deployedHackPIDs = {};
             ns.print(`INFO: Module stopped`);
             return true;
 
         case 'pause':
             state.isActive = false;
-            killAllDeployedOperations(ns, state.deployedPIDs);
+            killAllDeployedOperations(ns, state.deployedPIDs, state.deployedHackPIDs);
             state.deployedPIDs = {};
+            state.deployedHackPIDs = {};
             ns.print(`INFO: Module paused`);
             return true;
 
@@ -550,6 +663,7 @@ function sendStatusUpdate(ns: NS, statusPort: number, state: XPFarmerState, conf
                 successRate: 1.0,
                 customMetrics: {
                     totalXPGained: state.statistics.totalXPGained,
+                    totalMoneyGained: state.statistics.totalMoneyGained,
                     averageXPPerSecond: state.statistics.averageXPPerSecond,
                     hackingLevelGained: state.statistics.hackingLevelGained,
                     activeTargets: state.activeTargets.length
@@ -607,7 +721,7 @@ async function runStandaloneMode(ns: NS, config: XPFarmerConfig): Promise<void> 
             }
 
             // Check if we need to deploy (first run or targets changed)
-            if (Object.keys(state.deployedPIDs).length === 0) {
+            if (Object.keys(state.deployedPIDs).length === 0 && Object.keys(state.deployedHackPIDs).length === 0) {
                 shouldRedeploy = true;
             }
 
@@ -618,15 +732,17 @@ async function runStandaloneMode(ns: NS, config: XPFarmerConfig): Promise<void> 
             // Only redeploy if targets changed or no operations running
             if (shouldRedeploy) {
                 ns.print(`INFO: Available RAM: ${allocation.allocatedRam.toFixed(2)}GB across ${Object.keys(allocation.serverAllocations).length} servers`);
+                ns.print(`INFO: Hack/Weaken split: ${(config.hackRatio * 100).toFixed(0)}% hack, ${((1 - config.hackRatio) * 100).toFixed(0)}% weaken`);
 
                 // Kill old operations only when redeploying
-                if (Object.keys(state.deployedPIDs).length > 0) {
-                    killAllDeployedOperations(ns, state.deployedPIDs);
+                if (Object.keys(state.deployedPIDs).length > 0 || Object.keys(state.deployedHackPIDs).length > 0) {
+                    killAllDeployedOperations(ns, state.deployedPIDs, state.deployedHackPIDs);
                 }
 
                 // Deploy new operations
                 state.activeTargets = selectedTargets;
-                state.deployedPIDs = deployWeakenOperations(ns, selectedTargets, allocation);
+                state.deployedHackPIDs = deployHackOperations(ns, selectedTargets, allocation, config.hackRatio);
+                state.deployedPIDs = deployWeakenOperations(ns, selectedTargets, allocation, config.hackRatio);
                 state.statistics.totalOperations++;
                 lastDeployment = now;
             }
@@ -724,20 +840,21 @@ async function runDaemonMode(
                 }
 
                 // Check if we need to deploy (first run)
-                if (Object.keys(state.deployedPIDs).length === 0) {
+                if (Object.keys(state.deployedPIDs).length === 0 && Object.keys(state.deployedHackPIDs).length === 0) {
                     shouldRedeploy = true;
                 }
 
                 // Only redeploy when necessary
                 if (shouldRedeploy) {
                     // Kill old operations only when redeploying
-                    if (Object.keys(state.deployedPIDs).length > 0) {
-                        killAllDeployedOperations(ns, state.deployedPIDs);
+                    if (Object.keys(state.deployedPIDs).length > 0 || Object.keys(state.deployedHackPIDs).length > 0) {
+                        killAllDeployedOperations(ns, state.deployedPIDs, state.deployedHackPIDs);
                     }
 
                     // Deploy new operations
                     state.activeTargets = selectedTargets;
-                    state.deployedPIDs = deployWeakenOperations(ns, selectedTargets, allocation);
+                    state.deployedHackPIDs = deployHackOperations(ns, selectedTargets, allocation, config.hackRatio);
+                    state.deployedPIDs = deployWeakenOperations(ns, selectedTargets, allocation, config.hackRatio);
                     state.statistics.totalOperations++;
                     lastDeployment = now;
                 }

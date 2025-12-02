@@ -612,7 +612,6 @@ export async function main(ns: NS): Promise<void> {
   // Disable default logs for cleaner output
   ns.disableLog('ALL');
   ns.clearLog();
-  ns.ui.openTail();
 
   // Print startup banner
   ns.print('═══════════════════════════════════════════════');
