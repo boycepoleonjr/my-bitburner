@@ -1,2570 +1,3002 @@
 [
   {
-    "timestamp": 1764652407567,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"enableComponentLogs\":true,\"componentLogMaxEntries\":500,\"autoLaunchDashboard\":false}"
-  },
-  {
-    "timestamp": 1764652407567,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Initializing daemon state"
-  },
-  {
-    "timestamp": 1764652407567,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Restoring previous daemon state"
-  },
-  {
-    "timestamp": 1764652407567,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Daemon state initialized"
-  },
-  {
-    "timestamp": 1764652407568,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Discovering and preparing network"
-  },
-  {
-    "timestamp": 1764652407574,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
-  },
-  {
-    "timestamp": 1764652407576,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Distributed worker scripts to 0 servers"
-  },
-  {
-    "timestamp": 1764652407576,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Registering built-in modules"
-  },
-  {
-    "timestamp": 1764652407576,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Module already registered: xp-farmer"
-  },
-  {
-    "timestamp": 1764652407576,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting initial modules"
-  },
-  {
-    "timestamp": 1764652407576,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764652407576,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 528"
-  },
-  {
-    "timestamp": 1764652409219,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Started module xp-farmer with PID 531"
-  },
-  {
-    "timestamp": 1764652411224,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Entering main loop"
-  },
-  {
-    "timestamp": 1764652445747,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Loading daemon configuration"
-  },
-  {
-    "timestamp": 1764652445749,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"enableComponentLogs\":true,\"componentLogMaxEntries\":500,\"autoLaunchDashboard\":false}"
-  },
-  {
-    "timestamp": 1764652445749,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Initializing daemon state"
-  },
-  {
-    "timestamp": 1764652445749,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Restoring previous daemon state"
-  },
-  {
-    "timestamp": 1764652445749,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Daemon state initialized"
-  },
-  {
-    "timestamp": 1764652445749,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Discovering and preparing network"
-  },
-  {
-    "timestamp": 1764652445753,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
-  },
-  {
-    "timestamp": 1764652445754,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Distributed worker scripts to 0 servers"
-  },
-  {
-    "timestamp": 1764652445754,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Registering built-in modules"
-  },
-  {
-    "timestamp": 1764652445754,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Module already registered: xp-farmer"
-  },
-  {
-    "timestamp": 1764652445755,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting initial modules"
-  },
-  {
-    "timestamp": 1764652445755,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764652445755,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 531"
-  },
-  {
-    "timestamp": 1764655540424,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"enableComponentLogs\":true,\"componentLogMaxEntries\":500,\"autoLaunchDashboard\":false}"
-  },
-  {
-    "timestamp": 1764655540424,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Initializing daemon state"
-  },
-  {
-    "timestamp": 1764655540425,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Restoring previous daemon state"
-  },
-  {
-    "timestamp": 1764655540425,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Daemon state initialized"
-  },
-  {
-    "timestamp": 1764655540425,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Discovering and preparing network"
-  },
-  {
-    "timestamp": 1764655540431,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
-  },
-  {
-    "timestamp": 1764655540432,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Distributed worker scripts to 68 servers"
-  },
-  {
-    "timestamp": 1764655540432,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Registering built-in modules"
-  },
-  {
-    "timestamp": 1764655540432,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Module already registered: xp-farmer"
-  },
-  {
-    "timestamp": 1764655540432,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting initial modules"
-  },
-  {
-    "timestamp": 1764655540432,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764655540433,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 531"
-  },
-  {
-    "timestamp": 1764655542056,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Started module xp-farmer with PID 2746"
-  },
-  {
-    "timestamp": 1764655544060,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Entering main loop"
-  },
-  {
-    "timestamp": 1764655634195,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 2h 53m 41s, Modules 1, RAM 8418.14TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764655734294,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 2h 55m 21s, Modules 1, RAM 8418.40TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764655834412,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 2h 57m 2s, Modules 1, RAM 8418.40TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764655934537,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 2h 58m 42s, Modules 1, RAM 8418.20TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764656034667,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 3h 0m 22s, Modules 1, RAM 8418.40TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764656134799,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 3h 2m 2s, Modules 1, RAM 8418.40TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764656234967,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 3h 3m 42s, Modules 1, RAM 8418.40TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764656335054,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 3h 5m 22s, Modules 1, RAM 8418.40TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764656435180,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 3h 7m 2s, Modules 1, RAM 8418.40TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764656692329,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"enableComponentLogs\":true,\"componentLogMaxEntries\":500,\"autoLaunchDashboard\":false}"
-  },
-  {
-    "timestamp": 1764656692330,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Initializing daemon state"
-  },
-  {
-    "timestamp": 1764656692330,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Restoring previous daemon state"
-  },
-  {
-    "timestamp": 1764656692330,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Daemon state initialized"
-  },
-  {
-    "timestamp": 1764656692330,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Discovering and preparing network"
-  },
-  {
-    "timestamp": 1764656692337,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
-  },
-  {
-    "timestamp": 1764656692337,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Distributed worker scripts to 68 servers"
-  },
-  {
-    "timestamp": 1764656692338,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Registering built-in modules"
-  },
-  {
-    "timestamp": 1764656692338,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Module already registered: xp-farmer"
-  },
-  {
-    "timestamp": 1764656692338,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting initial modules"
-  },
-  {
-    "timestamp": 1764656692338,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764656692338,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2746"
-  },
-  {
-    "timestamp": 1764656693846,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Started module xp-farmer with PID 2832"
-  },
-  {
-    "timestamp": 1764656695849,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Entering main loop"
-  },
-  {
-    "timestamp": 1764656785962,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer timed out (30s since last update)"
-  },
-  {
-    "timestamp": 1764656785978,
+    "timestamp": 1764709850096,
     "level": "WARN",
     "component": "Daemon",
     "message": "Module xp-farmer is not running. Attempting recovery..."
   },
   {
-    "timestamp": 1764656785979,
+    "timestamp": 1764709850101,
     "level": "INFO",
     "component": "Daemon",
     "message": "Starting module: xp-farmer"
   },
   {
-    "timestamp": 1764656785979,
+    "timestamp": 1764709850103,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2832"
+    "message": "Killing existing process for xp-farmer: PID 2"
   },
   {
-    "timestamp": 1764656787501,
+    "timestamp": 1764709850609,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764709850614,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764709862628,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764709862631,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Started module xp-farmer with PID 2838"
+    "message": "Starting module: xp-farmer"
   },
   {
-    "timestamp": 1764656787502,
+    "timestamp": 1764709862633,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Successfully recovered module: xp-farmer"
+    "message": "Killing existing process for xp-farmer: PID 2"
   },
   {
-    "timestamp": 1764656789507,
+    "timestamp": 1764709863142,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764709863146,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764709875160,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764709875165,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Status: Uptime 3h 12m 57s, Modules 1, RAM 8418.25TB, Util 0.0%"
+    "message": "Starting module: xp-farmer"
   },
   {
-    "timestamp": 1764658633354,
+    "timestamp": 1764709875168,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764709875672,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764709875676,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764709887686,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764709887691,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764709887694,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764709888199,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764709888204,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764709890219,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 17h 57m 57s, Modules 2, RAM 103.55GB, Util 96.6%"
+  },
+  {
+    "timestamp": 1764709901860,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764709901863,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764709901865,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764709902373,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764709902377,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764712035054,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764712035057,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764712035060,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764712035569,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764712035574,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764714923818,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764714923819,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764714923820,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764714924324,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764714924327,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764714936338,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764714936340,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764714936342,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764714936847,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764714936851,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764714948862,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764714948865,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764714948868,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764714949372,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764714949375,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764714961388,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764714961391,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764714961394,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764714961904,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764714961907,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764715973742,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game timed out (1012s since last update)"
+  },
+  {
+    "timestamp": 1764715973745,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764715973747,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764715973749,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764715974256,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764715974258,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716725897,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716725899,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716725900,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716726407,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716726410,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716738430,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716738431,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716738433,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716738936,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716738937,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716750954,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716750958,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716750959,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716751465,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716751468,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716753480,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 19h 52m 21s, Modules 2, RAM 103.55GB, Util 96.6%"
+  },
+  {
+    "timestamp": 1764716763489,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716763492,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716763495,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716764001,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716764004,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716776019,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716776022,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716776025,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716776532,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716776536,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716788566,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716788570,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716788572,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716789080,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716789083,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716801101,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716801105,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716801108,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716801615,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716801617,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716813631,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716813634,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716813636,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716814140,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716814145,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716826152,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716826155,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716826158,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716826670,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716826675,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716838688,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716838690,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716838693,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716839198,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716839200,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716851216,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716851218,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716851220,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716851724,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716851727,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716863746,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716863750,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716863753,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716864260,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716864264,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716876270,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716876274,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716876276,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716876781,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716876785,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716878791,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 19h 54m 26s, Modules 2, RAM 103.55GB, Util 96.6%"
+  },
+  {
+    "timestamp": 1764716888803,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716888806,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716888808,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716889316,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716889319,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716901334,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716901337,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716901339,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716901845,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716901847,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716913867,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716913870,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716913871,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716914377,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716914380,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716926395,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716926397,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716926400,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716926904,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716926908,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716938916,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716938921,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716938923,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716939429,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716939432,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716951503,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716951504,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716951505,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716952008,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716952010,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716964015,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716964020,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716964023,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716964528,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716964532,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716976551,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716976553,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716976555,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716977063,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716977066,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716989080,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764716989083,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716989086,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764716989590,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764716989595,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717001607,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717001610,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717001613,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717002120,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717002123,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717004132,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 19h 56m 31s, Modules 2, RAM 103.55GB, Util 96.6%"
+  },
+  {
+    "timestamp": 1764717014137,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717014141,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717014144,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717014649,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717014654,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717026676,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717026680,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717026682,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717027192,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717027195,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717039214,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717039217,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717039219,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717039723,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717039727,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717051745,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717051749,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717051752,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717052260,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717052264,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717064277,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717064281,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717064283,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717064788,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717064793,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717076807,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717076811,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717076813,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717077321,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717077325,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717089337,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717089342,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717089344,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717089849,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717089853,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717101870,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717101872,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717101875,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717102378,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717102382,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717114402,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717114405,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717114409,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717114917,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717114920,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717126929,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717126933,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717126936,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717127445,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717127449,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717129457,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 19h 58m 37s, Modules 2, RAM 103.55GB, Util 96.6%"
+  },
+  {
+    "timestamp": 1764717139468,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717139471,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717139474,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717139981,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717139984,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717151995,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717151998,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717152000,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717152506,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717152509,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717164533,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717164536,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717164538,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717165046,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717165049,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717177063,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717177066,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717177068,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717177573,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717177578,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717189596,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717189600,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717189602,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717190109,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717190113,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717202127,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717202131,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717202133,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717202642,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717202647,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717214664,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717214668,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717214670,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717215177,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717215181,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717227199,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717227202,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717227204,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717227708,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717227712,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717239719,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717239722,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717239725,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717240229,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717240232,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717252254,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717252258,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717252261,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717252769,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717252772,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717254779,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 20h 0m 42s, Modules 2, RAM 103.55GB, Util 96.6%"
+  },
+  {
+    "timestamp": 1764717264785,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717264789,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717264791,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717265295,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717265300,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717277317,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717277321,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717277324,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717277832,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717277836,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717289855,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717289857,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717289860,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717290364,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717290369,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717302381,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717302384,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717302387,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717302894,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717302897,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717314940,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717314941,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717314942,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717315445,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717315449,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717327464,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717327467,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717327470,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717327981,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717327984,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717339999,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717340001,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717340004,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717340509,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717340514,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717352536,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717352540,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717352542,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717353048,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717353051,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717365065,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717365067,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717365069,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717365574,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717365578,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717377587,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717377590,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717377592,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717378099,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717378102,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717380112,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 20h 2m 47s, Modules 2, RAM 103.55GB, Util 96.6%"
+  },
+  {
+    "timestamp": 1764717390117,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717390121,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717390125,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717390630,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717390634,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717402643,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717402646,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717402649,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717403153,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717403157,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717415181,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717415184,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717415186,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717415693,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717415696,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717427704,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717427706,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717427708,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717428213,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717428216,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717440233,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717440235,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717440237,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717440744,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717440748,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717452762,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764717452765,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717452767,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for xp-farmer: PID 2"
+  },
+  {
+    "timestamp": 1764717453275,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: xp-farmer"
+  },
+  {
+    "timestamp": 1764717453278,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: xp-farmer"
+  },
+  {
+    "timestamp": 1764762895653,
     "level": "INFO",
     "component": "Daemon",
     "message": "Loading daemon configuration"
   },
   {
-    "timestamp": 1764658633358,
+    "timestamp": 1764762895659,
     "level": "INFO",
     "component": "Daemon",
     "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"enableComponentLogs\":true,\"componentLogMaxEntries\":500,\"autoLaunchDashboard\":false}"
   },
   {
-    "timestamp": 1764658633358,
+    "timestamp": 1764762895661,
     "level": "INFO",
     "component": "Daemon",
     "message": "Initializing daemon state"
   },
   {
-    "timestamp": 1764658633358,
+    "timestamp": 1764762895663,
     "level": "INFO",
     "component": "Daemon",
     "message": "Restoring previous daemon state"
   },
   {
-    "timestamp": 1764658633359,
+    "timestamp": 1764762895664,
     "level": "INFO",
     "component": "Daemon",
     "message": "Daemon state initialized"
   },
   {
-    "timestamp": 1764658633359,
+    "timestamp": 1764762895666,
     "level": "INFO",
     "component": "Daemon",
     "message": "Discovering and preparing network"
   },
   {
-    "timestamp": 1764658633368,
+    "timestamp": 1764762895680,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Network discovered: 97 servers, 97 rooted, 8418.40TB total RAM"
+    "message": "Network discovered: 71 servers, 28 rooted, 974.50GB total RAM"
   },
   {
-    "timestamp": 1764658633369,
+    "timestamp": 1764762895682,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Distributed worker scripts to 68 servers"
+    "message": "Distributed worker scripts to 24 servers"
   },
   {
-    "timestamp": 1764658633369,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Registering built-in modules"
-  },
-  {
-    "timestamp": 1764658633370,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Module already registered: xp-farmer"
-  },
-  {
-    "timestamp": 1764658633370,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting initial modules"
-  },
-  {
-    "timestamp": 1764658633370,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764658633371,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2838"
-  },
-  {
-    "timestamp": 1764658635046,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Started module xp-farmer with PID 3008"
-  },
-  {
-    "timestamp": 1764658637049,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Entering main loop"
-  },
-  {
-    "timestamp": 1764658727156,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 3h 45m 14s, Modules 1, RAM 8418.40TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764658827276,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 3h 46m 54s, Modules 1, RAM 8418.40TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764658927393,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 3h 48m 35s, Modules 1, RAM 8418.40TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764659027506,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 3h 50m 15s, Modules 1, RAM 8418.40TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764659127645,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 3h 51m 55s, Modules 1, RAM 8418.40TB, Util 0.0%"
-  },
-  {
-    "timestamp": 1764689019199,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Loading daemon configuration"
-  },
-  {
-    "timestamp": 1764689019200,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"enableComponentLogs\":true,\"componentLogMaxEntries\":500,\"autoLaunchDashboard\":false}"
-  },
-  {
-    "timestamp": 1764689019201,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Initializing daemon state"
-  },
-  {
-    "timestamp": 1764689019201,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Restoring previous daemon state"
-  },
-  {
-    "timestamp": 1764689019201,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Daemon state initialized"
-  },
-  {
-    "timestamp": 1764689019201,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Discovering and preparing network"
-  },
-  {
-    "timestamp": 1764689019207,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Network discovered: 70 servers, 8 rooted, 123.85GB total RAM"
-  },
-  {
-    "timestamp": 1764689019207,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Distributed worker scripts to 7 servers"
-  },
-  {
-    "timestamp": 1764689019207,
+    "timestamp": 1764762895683,
     "level": "INFO",
     "component": "Daemon",
     "message": "Registering built-in modules"
   },
   {
-    "timestamp": 1764689019207,
+    "timestamp": 1764762895684,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Module already registered: early-game"
+  },
+  {
+    "timestamp": 1764762895686,
     "level": "INFO",
     "component": "Daemon",
     "message": "Module already registered: xp-farmer"
   },
   {
-    "timestamp": 1764689019208,
+    "timestamp": 1764762895687,
     "level": "INFO",
     "component": "Daemon",
     "message": "Starting initial modules"
   },
   {
-    "timestamp": 1764689019208,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764689019208,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 3008"
-  },
-  {
-    "timestamp": 1764689020814,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Started module xp-farmer with PID 2"
-  },
-  {
-    "timestamp": 1764689022818,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Entering main loop"
-  },
-  {
-    "timestamp": 1764690357603,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Config loaded: {\"updateInterval\":10000,\"networkScanInterval\":60000,\"moduleStatusTimeout\":30000,\"enableAutoRecovery\":true,\"reserveHomeRam\":32,\"logLevel\":1,\"enableComponentLogs\":true,\"componentLogMaxEntries\":500,\"autoLaunchDashboard\":false}"
-  },
-  {
-    "timestamp": 1764690357603,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Initializing daemon state"
-  },
-  {
-    "timestamp": 1764690357604,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Restoring previous daemon state"
-  },
-  {
-    "timestamp": 1764690357604,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Daemon state initialized"
-  },
-  {
-    "timestamp": 1764690357604,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Discovering and preparing network"
-  },
-  {
-    "timestamp": 1764690357608,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Network discovered: 70 servers, 8 rooted, 123.85GB total RAM"
-  },
-  {
-    "timestamp": 1764690357609,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Distributed worker scripts to 7 servers"
-  },
-  {
-    "timestamp": 1764690357609,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Registering built-in modules"
-  },
-  {
-    "timestamp": 1764690357614,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Registered module: early-game"
-  },
-  {
-    "timestamp": 1764690357614,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Module already registered: xp-farmer"
-  },
-  {
-    "timestamp": 1764690357614,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting initial modules"
-  },
-  {
-    "timestamp": 1764690357614,
+    "timestamp": 1764762895688,
     "level": "INFO",
     "component": "Daemon",
     "message": "Starting module: early-game"
   },
   {
-    "timestamp": 1764690358721,
+    "timestamp": 1764762895689,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Started module early-game with PID 6"
+    "message": "Killing existing process for early-game: PID 19"
   },
   {
-    "timestamp": 1764690360725,
+    "timestamp": 1764762896198,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764762898206,
     "level": "INFO",
     "component": "Daemon",
     "message": "Starting module: xp-farmer"
   },
   {
-    "timestamp": 1764690360727,
+    "timestamp": 1764762898210,
     "level": "INFO",
     "component": "Daemon",
     "message": "Killing existing process for xp-farmer: PID 2"
   },
   {
-    "timestamp": 1764690361234,
-    "level": "ERROR",
+    "timestamp": 1764762899723,
+    "level": "INFO",
     "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
+    "message": "Started module xp-farmer with PID 53"
   },
   {
-    "timestamp": 1764690363238,
+    "timestamp": 1764762901726,
     "level": "INFO",
     "component": "Daemon",
     "message": "Entering main loop"
   },
   {
-    "timestamp": 1764690363255,
+    "timestamp": 1764762901739,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764762901741,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764762901742,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764762902247,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764762902251,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764762914269,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764762914273,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764762914275,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764762914782,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764762914785,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764762926799,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764762926801,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764762926803,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764762927308,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764762927312,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764762939324,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764762939327,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764762939330,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764762939838,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764762939841,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764762951854,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764762951858,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764762951861,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764762952369,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764762952373,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764762964391,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764762964392,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764762964393,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764762964901,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764762964904,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764762976916,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764762976921,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764762976926,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764762977429,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764762977433,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764762989442,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764762989444,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764762989446,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764762989953,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764762989956,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764763001968,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764763001970,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764763001971,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764763002477,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764763002480,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764763014499,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764763014503,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764763014506,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764763015014,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764763015018,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764763017026,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 1d 8h 43m, Modules 2, RAM 967.40GB, Util 26.5%"
+  },
+  {
+    "timestamp": 1764763027046,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764763027048,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764763027049,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764763027558,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764763027561,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764763039581,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764763039585,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764763039587,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764763040094,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764763040097,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764763052111,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764763052114,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764763052117,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764763052627,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764763052631,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764763064650,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764763064655,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764763064657,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764763065163,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764763065167,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764763077181,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764763077185,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764763077188,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764763077695,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764763077699,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764763089727,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764763089730,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764763089732,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764763090236,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764763090238,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764763102270,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764763102273,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764763102275,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764763102782,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764763102785,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764763114801,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764763114803,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764763114805,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764763115311,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764763115314,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764763127325,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764763127327,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764763127328,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764763127833,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764763127835,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764763139844,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module early-game is not running. Attempting recovery..."
+  },
+  {
+    "timestamp": 1764763139847,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Starting module: early-game"
+  },
+  {
+    "timestamp": 1764763139848,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Killing existing process for early-game: PID 19"
+  },
+  {
+    "timestamp": 1764763140351,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to start module: early-game"
+  },
+  {
+    "timestamp": 1764763140352,
+    "level": "ERROR",
+    "component": "Daemon",
+    "message": "Failed to recover module: early-game"
+  },
+  {
+    "timestamp": 1764763142362,
+    "level": "INFO",
+    "component": "Daemon",
+    "message": "Status: Uptime 1d 8h 45m, Modules 2, RAM 965.70GB, Util 26.5%"
+  },
+  {
+    "timestamp": 1764763152373,
+    "level": "WARN",
+    "component": "Daemon",
+    "message": "Module xp-farmer timed out (37s since last update)"
+  },
+  {
+    "timestamp": 1764763152376,
     "level": "WARN",
     "component": "Daemon",
     "message": "Module xp-farmer is not running. Attempting recovery..."
   },
   {
-    "timestamp": 1764690363255,
+    "timestamp": 1764763152378,
     "level": "INFO",
     "component": "Daemon",
     "message": "Starting module: xp-farmer"
   },
   {
-    "timestamp": 1764690363256,
+    "timestamp": 1764763152379,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
+    "message": "Killing existing process for xp-farmer: PID 53"
   },
   {
-    "timestamp": 1764690363757,
-    "level": "ERROR",
+    "timestamp": 1764763153889,
+    "level": "INFO",
     "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
+    "message": "Started module xp-farmer with PID 55"
   },
   {
-    "timestamp": 1764690363758,
-    "level": "ERROR",
+    "timestamp": 1764763153892,
+    "level": "INFO",
     "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
+    "message": "Successfully recovered module: xp-farmer"
   },
   {
-    "timestamp": 1764690375771,
+    "timestamp": 1764763155896,
     "level": "WARN",
     "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
+    "message": "Module early-game is not running. Attempting recovery..."
   },
   {
-    "timestamp": 1764690375793,
+    "timestamp": 1764763155900,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Starting module: xp-farmer"
+    "message": "Starting module: early-game"
   },
   {
-    "timestamp": 1764690375793,
+    "timestamp": 1764763155903,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
+    "message": "Killing existing process for early-game: PID 19"
   },
   {
-    "timestamp": 1764690376298,
+    "timestamp": 1764763156408,
     "level": "ERROR",
     "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
+    "message": "Failed to start module: early-game"
   },
   {
-    "timestamp": 1764690376299,
+    "timestamp": 1764763156411,
     "level": "ERROR",
     "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
+    "message": "Failed to recover module: early-game"
   },
   {
-    "timestamp": 1764690388310,
+    "timestamp": 1764763168424,
     "level": "WARN",
     "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
+    "message": "Module early-game is not running. Attempting recovery..."
   },
   {
-    "timestamp": 1764690388311,
+    "timestamp": 1764763168427,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Starting module: xp-farmer"
+    "message": "Starting module: early-game"
   },
   {
-    "timestamp": 1764690388311,
+    "timestamp": 1764763168430,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
+    "message": "Killing existing process for early-game: PID 19"
   },
   {
-    "timestamp": 1764690388816,
+    "timestamp": 1764763168938,
     "level": "ERROR",
     "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
+    "message": "Failed to start module: early-game"
   },
   {
-    "timestamp": 1764690388818,
+    "timestamp": 1764763168941,
     "level": "ERROR",
     "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
+    "message": "Failed to recover module: early-game"
   },
   {
-    "timestamp": 1764690400840,
+    "timestamp": 1764763180956,
     "level": "WARN",
     "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
+    "message": "Module early-game is not running. Attempting recovery..."
   },
   {
-    "timestamp": 1764690400841,
+    "timestamp": 1764763180960,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Starting module: xp-farmer"
+    "message": "Starting module: early-game"
   },
   {
-    "timestamp": 1764690400842,
+    "timestamp": 1764763180962,
     "level": "INFO",
     "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
+    "message": "Killing existing process for early-game: PID 19"
   },
   {
-    "timestamp": 1764690401348,
+    "timestamp": 1764763181466,
     "level": "ERROR",
     "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
+    "message": "Failed to start module: early-game"
   },
   {
-    "timestamp": 1764690401349,
+    "timestamp": 1764763181468,
     "level": "ERROR",
     "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690413369,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690413370,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690413371,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690413874,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690413875,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690425904,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690425905,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690425906,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690426411,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690426413,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690438429,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690438431,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690438433,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690438938,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690438940,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690450950,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690450952,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690450953,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690451459,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690451460,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690463464,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690463465,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690463466,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690463971,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690463973,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690475985,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690475987,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690475988,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690476490,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690476491,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690478499,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 12h 34m 26s, Modules 2, RAM 103.55GB, Util 96.6%"
-  },
-  {
-    "timestamp": 1764690488502,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690488503,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690488503,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690489008,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690489009,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690501018,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690501020,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690501021,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690501527,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690501528,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690513546,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690513548,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690513549,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690514064,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690514066,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690526080,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690526082,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690526083,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690526589,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690526590,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690538609,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690538612,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690538613,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690539119,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690539120,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690551147,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690551148,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690551149,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690551655,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690551658,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690563671,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690563673,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690563674,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690564181,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690564183,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690576208,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690576210,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690576211,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690576723,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690576724,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690588743,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690588745,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690588746,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690589253,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690589256,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690601270,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690601270,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690601271,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690601776,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690601778,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690603789,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 12h 36m 31s, Modules 2, RAM 103.55GB, Util 96.6%"
-  },
-  {
-    "timestamp": 1764690613803,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690613805,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690613807,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690614313,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690614315,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690626332,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690626334,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690626336,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690626842,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690626844,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690638867,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690638867,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690638868,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690639375,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690639377,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690651389,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690651391,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690651392,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690651902,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690651906,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690663925,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690663927,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690663928,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690664435,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690664437,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690676461,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690676463,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690676464,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690676976,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690676976,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690688987,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690688989,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690688990,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690689497,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690689499,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690701515,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690701518,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690701519,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690702028,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690702032,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690714051,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690714052,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690714053,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690714560,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690714562,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690726582,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690726584,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690726586,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690727094,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690727096,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690729104,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 12h 38m 36s, Modules 2, RAM 103.55GB, Util 96.6%"
-  },
-  {
-    "timestamp": 1764690739120,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690739122,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690739123,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690739631,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690739632,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690751646,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690751648,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690751650,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690752158,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690752162,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690764183,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690764184,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690764185,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690764691,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690764693,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690776712,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690776713,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690776714,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690777219,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690777221,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690789234,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690789235,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690789236,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690789743,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690789745,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690801763,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690801765,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690801766,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690802271,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690802273,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690814294,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690814296,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690814298,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690814815,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690814819,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690826838,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690826840,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690826842,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690827351,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690827354,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690839373,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690839375,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690839377,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690839884,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690839887,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690851897,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690851900,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690851901,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690852410,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690852412,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690854421,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 12h 40m 42s, Modules 2, RAM 5.55GB, Util 96.6%"
-  },
-  {
-    "timestamp": 1764690864440,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690864441,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690864442,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690864948,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690864950,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690876976,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690876978,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690876980,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690877487,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690877488,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690889508,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690889511,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690889512,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690890021,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690890023,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690902045,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690902047,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690902049,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690902557,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690902559,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690914577,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690914580,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690914581,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690915089,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690915091,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690927118,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690927119,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690927120,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690927629,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690927632,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690939654,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690939655,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690939657,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690940165,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690940167,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690952189,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690952191,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690952193,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690952700,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690952702,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690964721,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690964724,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690964726,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690965233,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690965235,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690977256,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690977258,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690977259,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690977768,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690977770,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690979780,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Status: Uptime 12h 42m 47s, Modules 2, RAM 5.55GB, Util 96.6%"
-  },
-  {
-    "timestamp": 1764690989805,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764690989806,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690989807,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764690990315,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764690990318,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691002338,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764691002341,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691002343,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764691002851,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691002853,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691014874,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764691014877,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691014878,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764691015385,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691015387,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691027405,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764691027408,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691027410,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764691027919,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691027922,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691039944,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764691039946,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691039948,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764691040455,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691040457,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691052484,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764691052487,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691052488,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764691052998,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691053001,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691065020,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764691065023,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691065025,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764691065533,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691065536,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691077551,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764691077555,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691077557,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764691078067,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691078070,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691090088,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764691090090,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691090092,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764691090600,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691090602,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691102624,
-    "level": "WARN",
-    "component": "Daemon",
-    "message": "Module xp-farmer is not running. Attempting recovery..."
-  },
-  {
-    "timestamp": 1764691102627,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Starting module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691102629,
-    "level": "INFO",
-    "component": "Daemon",
-    "message": "Killing existing process for xp-farmer: PID 2"
-  },
-  {
-    "timestamp": 1764691103140,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to start module: xp-farmer"
-  },
-  {
-    "timestamp": 1764691103143,
-    "level": "ERROR",
-    "component": "Daemon",
-    "message": "Failed to recover module: xp-farmer"
+    "message": "Failed to recover module: early-game"
   }
 ]

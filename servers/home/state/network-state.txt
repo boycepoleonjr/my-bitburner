@@ -8,6 +8,7 @@
     "hong-fang-tea",
     "harakiri-sushi",
     "iron-gym",
+    "darkweb",
     "CSEC",
     "zer0",
     "nectar-net",
@@ -79,7 +80,27 @@
     "joesguns",
     "hong-fang-tea",
     "harakiri-sushi",
-    "nectar-net"
+    "iron-gym",
+    "CSEC",
+    "zer0",
+    "nectar-net",
+    "max-hardware",
+    "phantasy",
+    "omega-net",
+    "silver-helix",
+    "neo-net",
+    "johnson-ortho",
+    "avmnite-02h",
+    "the-hub",
+    "computek",
+    "netlink",
+    "crush-fitness",
+    "summit-uni",
+    "rothman-uni",
+    "catalyst",
+    "I.I.I.I",
+    "rho-construction",
+    "millenium-fitness"
   ],
   "hackableServers": [
     "n00dles",
@@ -88,11 +109,17 @@
     "joesguns",
     "hong-fang-tea",
     "harakiri-sushi",
-    "nectar-net"
+    "iron-gym",
+    "zer0",
+    "nectar-net",
+    "max-hardware",
+    "phantasy",
+    "silver-helix",
+    "neo-net"
   ],
   "purchasedServers": [
     "home"
   ],
-  "totalRamAvailable": 5.549999999999997,
-  "lastScan": 1764691052481
+  "totalRamAvailable": 972.8,
+  "lastScan": 1764763152372
 }

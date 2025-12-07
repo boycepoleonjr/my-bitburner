@@ -24,5 +24,7 @@
   "homeRamUpgradePriority": false,
   "enableComponentLogs": true,
   "componentLogMaxEntries": 500,
-  "logLevel": 1
+  "logLevel": 1,
+  "controlPort": 13,
+  "statusPort": 33
 }

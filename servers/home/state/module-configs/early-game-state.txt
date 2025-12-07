@@ -1,7 +1,7 @@
 {
   "isActive": true,
   "startTime": 1764690357718,
-  "lastUpdate": 1764691093340,
+  "lastUpdate": 1764717450904,
   "currentPhase": "hacking",
   "phaseStartTime": 1764690702988,
   "phaseTransitionHistory": [
@@ -23,37 +23,37 @@
   "hackingState": {
     "activeTargets": [
       {
-        "hostname": "foodnstuff",
-        "moneyAvailable": 800000,
-        "moneyMax": 4000000,
-        "securityLevel": 8.100000000000001,
-        "minSecurityLevel": 3,
-        "requiredHackLevel": 1,
-        "hackChance": 1,
-        "moneyPerSecond": 860.3204943467845,
-        "priority": 860.3204943467845
-      },
-      {
         "hostname": "sigma-cosmetics",
         "moneyAvailable": 920000,
         "moneyMax": 4600000,
-        "securityLevel": 8.100000000000001,
+        "securityLevel": 3,
         "minSecurityLevel": 3,
         "requiredHackLevel": 5,
         "hackChance": 1,
-        "moneyPerSecond": 768.2782630908926,
-        "priority": 768.2782630908926
+        "moneyPerSecond": 2130.5612177325434,
+        "priority": 2130.5612177325434
+      },
+      {
+        "hostname": "foodnstuff",
+        "moneyAvailable": 800000,
+        "moneyMax": 4000000,
+        "securityLevel": 3,
+        "minSecurityLevel": 3,
+        "requiredHackLevel": 1,
+        "hackChance": 1,
+        "moneyPerSecond": 2018.6444693127353,
+        "priority": 2018.6444693127353
       },
       {
         "hostname": "joesguns",
         "moneyAvailable": 1000000,
         "moneyMax": 5000000,
-        "securityLevel": 14.100000000000001,
+        "securityLevel": 5,
         "minSecurityLevel": 5,
         "requiredHackLevel": 10,
-        "hackChance": 0.9393565866666667,
-        "moneyPerSecond": 443.25410670977294,
-        "priority": 443.25410670977294
+        "hackChance": 1,
+        "moneyPerSecond": 1880.3838408021331,
+        "priority": 1880.3838408021331
       }
     ],
     "deployedPIDs": {
@@ -75,7 +75,7 @@
     },
     "deployedGrowPIDs": {},
     "deployedHackPIDs": {},
-    "lastTargetRefresh": 1764691003257,
+    "lastTargetRefresh": 1764717315767,
     "moneyEarned": 0,
     "totalOperations": 1,
     "previousMoney": 1179

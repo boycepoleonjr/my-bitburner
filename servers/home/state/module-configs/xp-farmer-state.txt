@@ -1,44 +1,60 @@
 {
   "isActive": true,
   "startTime": 1764645212473,
-  "lastUpdate": 1764689049828,
+  "lastUpdate": 1764763182910,
   "lastTargetRefresh": 0,
   "activeTargets": [
     {
-      "hostname": "n00dles",
-      "xpPerSecond": 0.019506053731343283,
-      "weakenTime": 153.79840747487808,
-      "xpGain": 3,
-      "requiredHackLevel": 1
+      "hostname": "max-hardware",
+      "xpPerSecond": 0.97084416,
+      "weakenTime": 247.2075435876341,
+      "xpGain": 240,
+      "requiredHackLevel": 80
     },
     {
-      "hostname": "foodnstuff",
-      "xpPerSecond": 0.01867008,
-      "weakenTime": 160.68490333196218,
-      "xpGain": 3,
-      "requiredHackLevel": 1
+      "hostname": "harakiri-sushi",
+      "xpPerSecond": 0.8494886400000001,
+      "weakenTime": 141.26145347864804,
+      "xpGain": 120,
+      "requiredHackLevel": 40
+    },
+    {
+      "hostname": "hong-fang-tea",
+      "xpPerSecond": 0.78414336,
+      "weakenTime": 114.77493095140154,
+      "xpGain": 90,
+      "requiredHackLevel": 30
+    },
+    {
+      "hostname": "phantasy",
+      "xpPerSecond": 0.7722623999999999,
+      "weakenTime": 388.46899706628216,
+      "xpGain": 300,
+      "requiredHackLevel": 100
+    },
+    {
+      "hostname": "zer0",
+      "xpPerSecond": 0.6140881734939758,
+      "weakenTime": 366.39689496024346,
+      "xpGain": 225,
+      "requiredHackLevel": 75
     }
   ],
   "currentAllocation": {
     "moduleName": "xp-farmer",
-    "allocatedRam": 100,
+    "allocatedRam": 256,
     "serverAllocations": {
-      "foodnstuff": 16,
-      "sigma-cosmetics": 16,
-      "joesguns": 16,
-      "hong-fang-tea": 16,
-      "harakiri-sushi": 16,
-      "nectar-net": 16,
-      "n00dles": 4
+      "avmnite-02h": 128,
+      "catalyst": 128
     }
   },
   "deployedPIDs": {},
   "statistics": {
     "totalXPGained": 0,
-    "totalOperations": 120,
+    "totalOperations": 130,
     "averageXPPerSecond": 0,
-    "uptimeSeconds": 43837.355,
-    "hackingLevelGained": -10331,
+    "uptimeSeconds": 117970.436,
+    "hackingLevelGained": -10161,
     "startingHackingLevel": 10332,
     "totalMoneyGained": 0
   },

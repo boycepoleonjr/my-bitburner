@@ -21,6 +21,9 @@ run monitor.ts                   # System monitor (all components)
 run monitor.ts state             # State files only
 run monitor.ts logs              # Logs only
 run monitor.ts xp                # XP Farmer specifically
+run target-monitor.tsx           # React UI for detailed target server stats (all modules)
+run target-monitor.tsx xp        # Target stats from XP Farmer only
+run target-monitor.tsx early     # Target stats from Early Game module only
 ```
 
 ## Architecture

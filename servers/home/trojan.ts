@@ -7,6 +7,12 @@
 //  4. Sleeps 1 second every iteration, allowing for new exploits or hacking levels.
 //
 // Usage: run autoroot.js [--help] [--debug]
+// VERSION: 2.0.0
+// LAST UPDATED: 2025-12-03
+//
+// CHANGELOG:
+// - v2.0.0: Performance optimizations - reduced memory allocations, optimized port opener checks,
+//           track deployed workers to avoid redundant scp operations, check hacking level requirements
 // ---------------------------------------------------------------
 export async function main(ns: NS): Promise<void> {
   const flags = ns.flags([
@@ -20,66 +26,86 @@ export async function main(ns: NS): Promise<void> {
     return;
   }
 
-  // Clear logs and keep this script’s tail window open
+  // Clear logs and keep this script's tail window open
   ns.disableLog("ALL");
   ns.clearLog();
   if (flags.debug) ns.ui.openTail();
 
   // Prepare port openers
-  let portOpeners = [
-    { file: "BruteSSH.exe", exists: ns.fileExists("BruteSSH.exe", "home"), fn: ns.brutessh },
-    { file: "FTPCrack.exe", exists: ns.fileExists("FTPCrack.exe", "home"), fn: ns.ftpcrack },
-    { file: "relaySMTP.exe", exists: ns.fileExists("relaySMTP.exe", "home"), fn: ns.relaysmtp },
-    { file: "HTTPWorm.exe", exists: ns.fileExists("HTTPWorm.exe", "home"), fn: ns.httpworm },
-    { file: "SQLInject.exe", exists: ns.fileExists("SQLInject.exe", "home"), fn: ns.sqlinject }
+  const portOpeners = [
+    { file: "BruteSSH.exe", fn: ns.brutessh },
+    { file: "FTPCrack.exe", fn: ns.ftpcrack },
+    { file: "relaySMTP.exe", fn: ns.relaysmtp },
+    { file: "HTTPWorm.exe", fn: ns.httpworm },
+    { file: "SQLInject.exe", fn: ns.sqlinject }
   ];
+
+  // Track which servers have worker scripts deployed
+  const deployedWorkers = new Set<string>();
+  const workerScripts = ["hack.js", "grow.js", "weaken.js"];
 
   let loopCount = 0;
   // Run until all servers are rooted then kill script
   while (true) {
     if (flags.debug) ns.print(`\n[DEBUG] Loop ${++loopCount}`)
-    // Warn if any openers are missing
-    for (let { file, exists } of portOpeners) {
-      // refresh exists
-      exists = ns.fileExists(file, "home");
 
-      if (!exists) {
-        ns.print(`[INFO] Missing exploit: ${file}.`);
-      } else {
-        ns.print(`[INFO] Found exploit: ${file}.`);
-        // update portOpeners
-        portOpeners = portOpeners.map(opener => opener.file === file ? { ...opener, exists } : opener);
+    // Check available exploits once per loop
+    const availableOpeners = portOpeners.filter(opener => ns.fileExists(opener.file, "home"));
+
+    if (flags.debug) {
+      for (const opener of portOpeners) {
+        const exists = availableOpeners.some(o => o.file === opener.file);
+        ns.print(`[INFO] ${exists ? "Found" : "Missing"} exploit: ${opener.file}`);
       }
     }
 
     // Gather a list of all servers in the network
-    const allNodes: string[] = [...scanNetwork(ns)];
-    ns.print(`[INFO] Total Node Count: ${allNodes.length}\n`);
+    const allNodes = scanNetwork(ns);
+    ns.print(`[INFO] Total Node Count: ${allNodes.size}\n`);
 
-    // Identify servers that don’t have root
-    let unrootedNodes = allNodes.filter(node => !ns.hasRootAccess(node));
-    ns.print(`[INFO] Unrooted: ${unrootedNodes.length} nodes of ${allNodes.length}`);
-    let rootedAny = false; // Track if we root anything this pass
+    // Identify servers that don't have root
+    const unrootedNodes: string[] = [];
+    for (const node of allNodes) {
+      if (!ns.hasRootAccess(node)) {
+        unrootedNodes.push(node);
+      }
+    }
 
-    for (const node of [...unrootedNodes]) {
+    ns.print(`[INFO] Unrooted: ${unrootedNodes.length} nodes of ${allNodes.size}`);
+
+    if (unrootedNodes.length === 0) {
+      break;
+    }
+
+    const playerHackLevel = ns.getHackingLevel();
+
+    for (const node of unrootedNodes) {
+      const requiredHackLevel = ns.getServerRequiredHackingLevel(node);
+
+      // Skip if we don't meet hacking level requirement
+      if (playerHackLevel < requiredHackLevel) {
+        if (flags.debug) {
+          ns.print(`[DEBUG] ${node}: Requires hack level ${requiredHackLevel} (current: ${playerHackLevel})`);
+        }
+        continue;
+      }
+
       const portsRequired = ns.getServerNumPortsRequired(node);
 
       // Open as many ports as possible with available exploits
       let portsOpened = 0;
-      for (const opener of portOpeners) {
-        if (opener.exists) {
-          try {
-            opener.fn(node);
-            portsOpened++;
-          } catch (err) {
-            // If an exploit fails for some reason, just log it in debug mode
-            if (flags.debug) ns.print(`[DEBUG] Exploit error on ${node}: ${err}`);
-          }
+      for (const opener of availableOpeners) {
+        try {
+          opener.fn(node);
+          portsOpened++;
+        } catch (err) {
+          // If an exploit fails for some reason, just log it in debug mode
+          if (flags.debug) ns.print(`[DEBUG] Exploit error on ${node}: ${err}`);
         }
       }
 
       if (flags.debug) {
-        ns.print(`[DEBUG] ${node}: ${portsOpened} of ${portsRequired}`);
+        ns.print(`[DEBUG] ${node}: ${portsOpened} of ${portsRequired} ports`);
       }
 
       // Nuke if enough ports are opened
@@ -88,12 +114,11 @@ export async function main(ns: NS): Promise<void> {
           ns.nuke(node);
           ns.print(`[INFO] Rooted ${node}`);
           ns.toast(`Rooted ${node}`, "success", 5000);
-          // Remove from the unrooted list
-          unrootedNodes = unrootedNodes.filter(n => n !== node);
-          rootedAny = true;
-          // deploy tools to the newly rooted node
-          if (ns.getServerMaxRam(node) > 0) {
-            ns.scp(["hack.js", "grow.js", "weaken.js"], node, "home");
+
+          // Deploy worker scripts to newly rooted node (only if not already deployed)
+          if (!deployedWorkers.has(node) && ns.getServerMaxRam(node) > 0) {
+            await ns.scp(workerScripts, node, "home");
+            deployedWorkers.add(node);
           }
         } catch (err) {
           ns.print(`[WARN] Failed to NUKE ${node}: ${err}`);
@@ -103,17 +128,6 @@ export async function main(ns: NS): Promise<void> {
 
     // Sleep 1 second every loop iteration before retrying
     await ns.sleep(1000);
-
-    // Update unrooted node list in case root access changed outside this script
-    unrootedNodes = unrootedNodes.filter(n => !ns.hasRootAccess(n));
-
-    if (flags.debug) {
-      ns.print(`[DEBUG] Still unrooted: ${unrootedNodes.join(", ") || "None"}`);
-    }
-
-    if (unrootedNodes.length === 0) {
-      break;
-    }
   }
 
   ns.print("[INFO] ✅ All nodes have been rooted! 🎉");
@@ -125,16 +139,20 @@ export async function main(ns: NS): Promise<void> {
 
 /** Scan the network and collect all servers using a BFS approach to avoid duplicates */
 function scanNetwork(ns: NS): Set<string> {
-  const visited: Set<string> = new Set();
+  const visited = new Set<string>();
   const queue: string[] = ["home"]; // Start scanning from "home"
 
   while (queue.length > 0) {
     const current = queue.shift()!;
     if (!visited.has(current)) {
       visited.add(current);
-      // Scan neighbors, excluding the current server to reduce duplicates
-      const neighbors = ns.scan(current).filter(n => n !== current);
-      queue.push(...neighbors);
+      // Scan neighbors and add unvisited ones to queue
+      const neighbors = ns.scan(current);
+      for (const neighbor of neighbors) {
+        if (!visited.has(neighbor)) {
+          queue.push(neighbor);
+        }
+      }
     }
   }
   return visited;

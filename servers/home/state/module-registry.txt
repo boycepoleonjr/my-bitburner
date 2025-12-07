@@ -14,14 +14,14 @@
         "optimalRamRequired": 256
       },
       "priority": 80,
-      "status": "error",
-      "lastStatusUpdate": 1764691103142,
+      "status": "running",
+      "lastStatusUpdate": 1764763168421,
       "ramAllocation": {
         "requested": 4,
         "allocated": 0,
         "actual": 0
       },
-      "pid": 2,
+      "pid": 55,
       "controlPort": 10,
       "statusPort": 30
     },
@@ -57,17 +57,17 @@
         "logLevel": 1
       },
       "priority": 95,
-      "status": "running",
+      "status": "error",
       "controlPort": 13,
       "statusPort": 33,
-      "lastStatusUpdate": 1764691102619,
+      "lastStatusUpdate": 1764763181468,
       "ramAllocation": {
         "requested": 8,
         "allocated": 0,
         "actual": 0
       },
-      "pid": 6
+      "pid": 19
     }
   },
-  "lastUpdate": 1764691103142
+  "lastUpdate": 1764763181468
 }

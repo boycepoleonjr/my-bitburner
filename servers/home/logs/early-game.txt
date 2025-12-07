@@ -1,149 +1,5 @@
 [
   {
-    "timestamp": 1764690357717,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Running in DAEMON-MANAGED mode"
-  },
-  {
-    "timestamp": 1764690357717,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Control port: 13, Status port: 33"
-  },
-  {
-    "timestamp": 1764690372726,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Received control message: start"
-  },
-  {
-    "timestamp": 1764690372729,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Module started"
-  },
-  {
-    "timestamp": 1764690372746,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Started training at Rothman University (Level 1 → 50)"
-  },
-  {
-    "timestamp": 1764690387760,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Received control message: resource_allocation"
-  },
-  {
-    "timestamp": 1764690387763,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Resource allocation updated: 100.00GB"
-  },
-  {
-    "timestamp": 1764690402771,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Received control message: resource_allocation"
-  },
-  {
-    "timestamp": 1764690402774,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Resource allocation updated: 100.00GB"
-  },
-  {
-    "timestamp": 1764690417784,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Received control message: resource_allocation"
-  },
-  {
-    "timestamp": 1764690417787,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Resource allocation updated: 100.00GB"
-  },
-  {
-    "timestamp": 1764690417787,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Received control message: resource_allocation"
-  },
-  {
-    "timestamp": 1764690417788,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Resource allocation updated: 100.00GB"
-  },
-  {
-    "timestamp": 1764690432797,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Received control message: resource_allocation"
-  },
-  {
-    "timestamp": 1764690432798,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Resource allocation updated: 100.00GB"
-  },
-  {
-    "timestamp": 1764690447808,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Received control message: resource_allocation"
-  },
-  {
-    "timestamp": 1764690447812,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Resource allocation updated: 100.00GB"
-  },
-  {
-    "timestamp": 1764690462808,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Received control message: resource_allocation"
-  },
-  {
-    "timestamp": 1764690462809,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Resource allocation updated: 100.00GB"
-  },
-  {
-    "timestamp": 1764690477806,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Received control message: resource_allocation"
-  },
-  {
-    "timestamp": 1764690477809,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Resource allocation updated: 100.00GB"
-  },
-  {
-    "timestamp": 1764690492813,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Received control message: resource_allocation"
-  },
-  {
-    "timestamp": 1764690492816,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Resource allocation updated: 100.00GB"
-  },
-  {
-    "timestamp": 1764690492817,
-    "level": "INFO",
-    "component": "early-game",
-    "message": "Received control message: resource_allocation"
-  },
-  {
     "timestamp": 1764690492817,
     "level": "INFO",
     "component": "early-game",
@@ -376,5 +232,2771 @@
     "level": "INFO",
     "component": "early-game",
     "message": "Selected 3 targets: foodnstuff, sigma-cosmetics, joesguns"
+  },
+  {
+    "timestamp": 1764692753765,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764692753790,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: foodnstuff, sigma-cosmetics, joesguns"
+  },
+  {
+    "timestamp": 1764693177666,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764693177681,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: foodnstuff, sigma-cosmetics, joesguns"
+  },
+  {
+    "timestamp": 1764693477863,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764693477875,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764693778071,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764693778084,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764694078258,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764694078274,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764694378458,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764694378481,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764694678700,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764694678718,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764694992418,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764694992441,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764695292547,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764695292572,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764695592672,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764695592692,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764695892793,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764695892817,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764696192921,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764696192944,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764696661705,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764696661733,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764698517763,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764698517772,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764698817852,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764698817877,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764699117991,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764699118000,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764699422817,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764699422823,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764699729214,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764699729223,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764700954747,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764700954756,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764701260490,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764701260501,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764701466171,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Config loaded from /state/module-configs/early-game-config.txt"
+  },
+  {
+    "timestamp": 1764701466174,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Execution mode: daemon-managed"
+  },
+  {
+    "timestamp": 1764701466176,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Running in DAEMON-MANAGED mode"
+  },
+  {
+    "timestamp": 1764701466178,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Control port: 13, Status port: 33"
+  },
+  {
+    "timestamp": 1764701466180,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Restoring previous state from /state/module-configs/early-game-state.txt"
+  },
+  {
+    "timestamp": 1764701481190,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: start"
+  },
+  {
+    "timestamp": 1764701481192,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Module started"
+  },
+  {
+    "timestamp": 1764701481199,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701481201,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701496205,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701496209,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701511215,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701511217,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701526224,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701526226,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701526228,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701526230,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701541234,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701541237,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701556245,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701556248,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701571253,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701571257,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701571263,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764701571285,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764701586290,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701586293,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701601298,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701601303,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701601306,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701601307,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701616314,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701616316,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701631323,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701631326,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701646333,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701646336,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701661342,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701661347,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701676356,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701676360,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701676363,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701676365,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701691374,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701691377,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701706385,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701706389,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701721393,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701721397,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701736402,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701736406,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701751413,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701751417,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701751419,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701751421,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701766425,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701766430,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701781437,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701781441,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701796449,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701796453,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701811460,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701811464,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701826468,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701826473,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701826475,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701826477,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701841484,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701841488,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701856494,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701856497,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701871506,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701871508,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701871510,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764701871519,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764701886525,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701886528,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701901535,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701901537,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701901538,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701901539,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701916548,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701916553,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701931562,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701931565,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701946570,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701946574,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701961583,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701961586,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701976595,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701976599,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701976603,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701976604,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764701991609,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764701991614,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702006624,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702006628,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702021637,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702021642,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702036650,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702036654,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702051659,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702051661,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702051664,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702051666,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702066673,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702066675,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702081683,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702081688,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702096696,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702096701,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702111705,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702111709,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702126714,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702126717,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702126720,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702126722,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702141730,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702141734,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702156741,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702156745,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702171758,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702171762,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702171767,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764702171774,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764702186778,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702186782,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702201787,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702201791,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702201792,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702201794,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702216798,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702216804,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702231812,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702231816,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702246825,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702246828,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702261836,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702261841,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702276846,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702276850,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702276852,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702276854,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702291864,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702291866,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702306874,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702306878,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702321887,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702321890,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702336896,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702336898,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702351905,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702351907,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702351908,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702351910,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702366912,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702366915,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702381920,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702381924,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702396932,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702396936,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702411954,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702411956,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702426961,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702426966,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702426970,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702426971,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702441975,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702441978,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702456988,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702456991,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702471997,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702472000,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702472005,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764702472013,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764702487020,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702487022,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702502025,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702502028,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702502030,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702502032,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702517042,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702517045,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702532052,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702532056,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702547065,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702547068,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702562074,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702562078,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702577087,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702577090,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702577093,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702577095,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702592102,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702592105,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702607113,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702607118,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702622129,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702622134,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702637141,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702637145,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702652152,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702652157,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764702652159,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764702652161,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764704740837,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764704740843,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764704740846,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764704740851,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764704758359,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764704758364,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764704773378,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764704773383,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764704788390,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764704788391,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764706844826,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764706844830,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764706844833,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764706844841,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764706859852,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764706859856,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764706859858,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764706859860,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764706874869,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764706874874,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764706889883,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764706889887,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764707318062,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764707318064,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764707318066,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764707318073,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764707333080,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764707333084,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764707348095,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764707348097,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764707348100,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764707348102,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764708140922,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764708140925,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764708140930,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764708140938,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764708155942,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764708155945,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764708170956,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764708170961,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764708235351,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764708235356,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764708250361,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764708250366,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764708265374,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764708265379,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764708287827,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764708287832,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764708302842,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764708302847,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764708317854,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764708317858,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764709767046,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764709767049,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764709767051,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764709767052,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764709767056,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764709767064,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764709782051,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764709782053,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764709797052,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764709797055,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764709812065,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764709812068,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764709827073,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764709827077,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764709842087,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764709842091,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764709842094,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764709842096,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764709857105,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764709857111,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764709872120,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764709872124,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764709887129,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764709887133,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764709903762,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764709903767,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764712958101,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764712958104,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764712958107,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764712958109,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764712958114,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764712958122,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764714930691,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764714930694,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764714930698,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764714930706,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764714945713,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764714945718,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764714960725,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764714960730,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716715159,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716715160,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716715161,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764716715164,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764716730183,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716730186,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716745199,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716745201,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716760213,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716760219,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716775230,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716775235,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716790245,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716790248,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716805257,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716805260,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716805263,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716805265,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716820274,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716820277,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716835284,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716835288,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716850295,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716850298,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716865305,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716865309,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716880318,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716880323,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716880325,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716880328,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716895334,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716895338,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716910347,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716910352,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716925359,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716925363,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716940376,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716940381,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716955389,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716955394,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716955396,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716955399,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716970409,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716970415,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764716985425,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764716985430,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717000440,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717000447,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717015457,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717015461,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717015463,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764717015472,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764717030478,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717030482,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717030485,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717030487,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717045497,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717045500,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717060505,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717060509,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717075517,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717075522,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717090529,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717090533,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717105546,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717105551,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717105553,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717105556,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717120561,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717120566,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717135578,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717135583,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717150595,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717150599,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717165608,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717165611,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717180620,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717180625,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717180628,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717180631,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717195637,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717195642,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717210652,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717210656,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717225665,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717225669,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717240682,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717240686,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717255693,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717255697,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717255700,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717255702,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717270711,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717270715,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717285725,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717285730,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717300744,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717300750,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717315761,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717315764,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717315767,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Refreshing hacking targets..."
+  },
+  {
+    "timestamp": 1764717315776,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Selected 3 targets: sigma-cosmetics, foodnstuff, joesguns"
+  },
+  {
+    "timestamp": 1764717330781,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717330785,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717330787,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717330790,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717345798,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717345800,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717360810,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717360813,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717375822,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717375827,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717390834,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717390836,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717405844,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717405848,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717405850,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717405853,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717420862,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717420866,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717435878,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717435882,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
+  },
+  {
+    "timestamp": 1764717450895,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Received control message: resource_allocation"
+  },
+  {
+    "timestamp": 1764717450899,
+    "level": "INFO",
+    "component": "early-game",
+    "message": "Resource allocation updated: 100.00GB"
   }
 ]

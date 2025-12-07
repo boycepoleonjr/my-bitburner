@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "moduleName": "xp-farmer",
+    "allocatedRam": 256,
+    "serverAllocations": {
+      "avmnite-02h": 128,
+      "catalyst": 128
+    }
+  }
+]
