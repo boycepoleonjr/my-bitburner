@@ -1,7 +1,4 @@
-/**
- * Interactive server map scanner
- * @param ns - Netscript API
- */
+/** Interactive net map scanner */
 export function main(ns: NS): void {
   const factionServers = new Set<string>([
     "CSEC",
@@ -188,4 +185,3 @@ export function main(ns: NS): void {
     scanElement.classList.remove("new");
   }
 }
-

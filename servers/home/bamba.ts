@@ -1,26 +1,43 @@
 /**
- * Mass Grow Script
+ * Main Daemon Script
  * VERSION: 1.0.0
- * LAST UPDATED: 2025-12-02
+ * LAST UPDATED: 2025-12-03
+ * 
+ * Manages scripts to do the following:
+ * - Monitor and root all nodes in the net
+ * - Deploy grow/weaken/hack scripts to all nodes in the net
+ * - Maximize thread allocation for grow/weaken/hack operations
+ * - 
  *
- * Grows all servers in the network as fast as possible by:
- * - Scanning and rooting all accessible servers
- * - Deploying grow/weaken scripts across the entire network
- * - Maximizing thread allocation for grow operations
- *
- * Usage: run grow-all.ts [target]
- * If no target specified, grows all servers with money
+ * Usage: 
+ *   run bamba.ts [target]        - Deploy grow operations (or target specific server)
+ *   run bamba.ts monitor [ms]    - Monitor all servers (default 5000ms interval)
  */
 
-const WORKER_SCRIPTS = ['/grow.ts', '/weaken.ts'];
+import { getServerRankings, ServerInfo } from './server-info';
+
+const WORKER_SCRIPTS = ['/grow.ts', '/weaken.ts', '/hack.ts'];
 const GROW_SCRIPT = '/grow.ts';
 const WEAKEN_SCRIPT = '/weaken.ts';
+const HACK_SCRIPT = '/hack.ts';
 
 interface ServerResource {
   hostname: string;
   maxRam: number;
   availableRam: number;
   hasRoot: boolean;
+}
+
+interface ServerMonitorData {
+  hostname: string;
+  requiredHackLevel: number;
+  hasRoot: boolean;
+  moneyAvailable: number;
+  moneyMax: number;
+  moneyPercent: number;
+  securityLevel: number;
+  minSecurityLevel: number;
+  securityDelta: number;
 }
 
 /**
@@ -250,12 +267,136 @@ function deployGrowOperations(ns: NS, resources: ServerResource[], targets: stri
 }
 
 /**
+ * Collect monitoring data for all servers
+ */
+function collectMonitorData(ns: NS, allServers: string[]): ServerMonitorData[] {
+  const monitorData: ServerMonitorData[] = [];
+
+  for (const hostname of allServers) {
+    try {
+      const server = ns.getServer(hostname);
+      const requiredHackLevel = server.requiredHackingSkill || 0;
+      const hasRoot = server.hasAdminRights || false;
+      const moneyAvailable = server.moneyAvailable || 0;
+      const moneyMax = server.moneyMax || 0;
+      const moneyPercent = moneyMax > 0 ? (moneyAvailable / moneyMax) * 100 : 0;
+      const securityLevel = server.hackDifficulty || server.minDifficulty || 0;
+      const minSecurityLevel = server.minDifficulty || 0;
+      const securityDelta = securityLevel - minSecurityLevel;
+
+      monitorData.push({
+        hostname,
+        requiredHackLevel,
+        hasRoot,
+        moneyAvailable,
+        moneyMax,
+        moneyPercent,
+        securityLevel,
+        minSecurityLevel,
+        securityDelta
+      });
+    } catch (error) {
+      // Skip servers we can't access
+      continue;
+    }
+  }
+
+  // Sort by hostname for consistent display
+  monitorData.sort((a, b) => a.hostname.localeCompare(b.hostname));
+
+  return monitorData;
+}
+
+/**
+ * Format money value for display
+ */
+function formatMoney(ns: NS, amount: number): string {
+  if (amount >= 1e12) return `$${(amount / 1e12).toFixed(2)}T`;
+  if (amount >= 1e9) return `$${(amount / 1e9).toFixed(2)}B`;
+  if (amount >= 1e6) return `$${(amount / 1e6).toFixed(2)}M`;
+  if (amount >= 1e3) return `$${(amount / 1e3).toFixed(2)}K`;
+  return `$${amount.toFixed(2)}`;
+}
+
+/**
+ * Display monitoring data for all servers
+ */
+function displayMonitorData(ns: NS, data: ServerMonitorData[]): void {
+  ns.clearLog();
+  
+  ns.print('═══════════════════════════════════════════════════════════════════════════════');
+  ns.print('   NETWORK MONITOR - ALL SERVERS');
+  ns.print('═══════════════════════════════════════════════════════════════════════════════');
+  ns.print('');
+
+  if (data.length === 0) {
+    ns.print('No servers found.');
+    return;
+  }
+
+  // Display each server's data
+  for (const server of data) {
+    const rootStatus = server.hasRoot ? '☠️ ROOTED' : '☠️ NO ROOT';
+    const moneyStr = server.moneyMax > 0 
+      ? `${formatMoney(ns, server.moneyAvailable)} / ${formatMoney(ns, server.moneyMax)} (${server.moneyPercent.toFixed(1)}%)`
+      : 'No Money';
+    const securityStr = server.securityDelta > 0
+      ? `${server.securityLevel.toFixed(2)} (+${server.securityDelta.toFixed(2)})`
+      : `${server.securityLevel.toFixed(2)}`;
+
+    ns.print(`${server.hostname.padEnd(20)} | 📊: ${String(server.requiredHackLevel).padStart(4)} (${rootStatus}) | 💰: ${moneyStr.padEnd(30)} | 🔒: ${securityStr}`);
+  }
+
+  ns.print('');
+  ns.print('═══════════════════════════════════════════════════════════════════════════════');
+  ns.print(`Total Servers: ${data.length} | Press Ctrl+C to exit`);
+  ns.print('═══════════════════════════════════════════════════════════════════════════════');
+}
+
+/**
+ * Monitor mode - continuously track all servers
+ */
+async function monitorMode(ns: NS, interval: number): Promise<void> {
+  ns.disableLog("ALL");
+  ns.clearLog();
+  ns.ui.openTail();
+
+  ns.print('Starting network monitor...');
+  ns.print(`Update interval: ${interval}ms`);
+  await ns.asleep(1000);
+
+  while (true) {
+    try {
+      const allServers = scanNetwork(ns);
+      const monitorData = collectMonitorData(ns, allServers);
+      displayMonitorData(ns, monitorData);
+      await ns.asleep(interval);
+    } catch (error) {
+      ns.print(`ERROR: ${error}`);
+      await ns.asleep(interval);
+    }
+  }
+}
+
+/**
  * Main execution
  */
 export async function main(ns: NS): Promise<void> {
-  ns.disableLog('ALL');
+  // Check if monitor mode is requested
+  const monitorArg = ns.args[0] as string | undefined;
+  if (monitorArg === 'monitor' || monitorArg === 'm') {
+    const interval = (ns.args[1] as number) || 5000; // Default 5 seconds
+    await monitorMode(ns, interval);
+    return;
+  }
+
+  ns.disableLog("scan");
+  ns.disableLog("brutessh");
+  ns.disableLog("relaysmtp");
+  ns.disableLog("scp");
+  ns.disableLog("getHackingLevel");
   ns.clearLog();
-  ns.tail();
+  ns.ui.openTail();
 
   ns.print('═══════════════════════════════════════════════');
   ns.print('   MASS GROW - NETWORK-WIDE GROWTH OPERATIONS');
@@ -292,16 +433,24 @@ export async function main(ns: NS): Promise<void> {
   }
   ns.print(`INFO: Deployed scripts to ${deployedCount} servers`);
 
-  // Step 4: Get available resources
-  const resources = getAvailableServers(ns, allServers);
+  // Step 4: Get server rankings and filter utility nodes
+  const serverRankings = getServerRankings(ns);
+  const utilityNodes = serverRankings.filter(s => s.isUtilityNode);
+  const resources = utilityNodes.map(node => {
+    const server = ns.getServer(node.name);
+    return {
+      hostname: node.name,
+      maxRam: node.maxRam,
+      availableRam: node.maxRam - (server.ramUsed || 0),
+      hasRoot: true
+    };
+  });
   const totalRam = resources.reduce((sum, r) => sum + r.maxRam, 0);
   const availableRam = resources.reduce((sum, r) => sum + r.availableRam, 0);
-  ns.print(`INFO: Available resources: ${resources.length} servers, ${availableRam.toFixed(2)}GB / ${totalRam.toFixed(2)}GB RAM`);
+  ns.print(`INFO: Available resources: ${resources.length} utility nodes, ${availableRam.toFixed(2)}GB / ${totalRam.toFixed(2)}GB RAM`);
 
   // Step 5: Get grow targets
-  const targets = specificTarget
-    ? [specificTarget]
-    : getGrowTargets(ns, allServers);
+  const targets = specificTarget ? [specificTarget] : getGrowTargets(ns, allServers);
 
   if (targets.length === 0) {
     ns.print('ERROR: No valid targets found!');
@@ -334,6 +483,7 @@ export async function main(ns: NS): Promise<void> {
   ns.print(`  Targets being grown: ${targets.length}`);
   ns.print('═══════════════════════════════════════════════');
   ns.print('');
-  ns.print('TIP: Use "run monitor.ts" to track progress');
+  ns.print('TIP: Use "run bamba.ts monitor [interval]" to track all servers');
   ns.print('TIP: Scripts will run continuously until killed');
 }
+

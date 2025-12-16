@@ -1,0 +1,7 @@
+{
+  "updateInterval": 10000,
+  "networkScanInterval": 60000,
+  "moduleStatusTimeout": 30000,
+  "reserveHomeRam": 32,
+  "logLevel": 1
+}

@@ -1,7 +1,7 @@
 /**
  * Weaken Worker Script
  * VERSION: 1.0.0
- * LAST UPDATED: 2025-12-02
+ * LAST UPDATED: 2025-12-03
  */
 
 export async function main(ns: NS): Promise<void> {

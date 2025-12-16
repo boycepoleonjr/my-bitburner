@@ -1,3 +1,9 @@
+/**
+ * Kill All Running Scripts
+ * VERSION: 1.0.0
+ * LAST UPDATED: 2025-12-03
+ */
+
 export async function main(ns: NS): Promise<void> {
   const servers = scanNetwork(ns);
   for (const server of servers) {
