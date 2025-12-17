@@ -19,8 +19,6 @@ interface ServerMonitorData {
   securityLevel: number;
   minSecurityLevel: number;
   securityDelta: number;
-  maxRam: number;
-  usedRam: number;
 }
 
 let nsRef: NS;
@@ -76,8 +74,6 @@ function collectMonitorData(ns: NS, allServers: string[]): ServerMonitorData[] {
         securityLevel,
         minSecurityLevel,
         securityDelta,
-        maxRam: server.maxRam || 0,
-        usedRam: server.ramUsed || 0,
       });
     } catch (error) {
       continue;
@@ -137,9 +133,6 @@ function ServerCard({ server }: { server: ServerMonitorData }) {
       : server.securityDelta > 1
       ? THEME.secondary
       : THEME.primary;
-
-  const ramPercent = server.maxRam > 0 ? (server.usedRam / server.maxRam) * 100 : 0;
-  const ramColor = ramPercent > 90 ? THEME.danger : ramPercent > 50 ? THEME.secondary : THEME.primary;
 
   return (
     <div
@@ -221,18 +214,6 @@ function ServerCard({ server }: { server: ServerMonitorData }) {
             </span>
           )}
         </div>
-
-        {/* RAM */}
-        {server.maxRam > 0 && (
-          <div style={{ color: THEME.textDim }}>
-            <span style={{ color: THEME.tertiary }}>RAM:</span>{' '}
-            <span style={{ color: ramColor }}>
-              {server.usedRam.toFixed(0)}
-            </span>
-            <span style={{ color: THEME.dim }}>/</span>
-            <span style={{ color: THEME.tertiary }}>{server.maxRam}GB</span>
-          </div>
-        )}
       </div>
     </div>
   );
@@ -242,7 +223,7 @@ function ServerCard({ server }: { server: ServerMonitorData }) {
  * Network Monitor React Component
  */
 function NetworkMonitorUI({ interval }: { interval: number }) {
-  const [servers, setServers] = React.useState<ServerMonitorData[]>([]);
+  const [servers, setServers] = React.useState([] as ServerMonitorData[]);
   const [lastUpdate, setLastUpdate] = React.useState(new Date());
   const [playerMoney, setPlayerMoney] = React.useState(0);
   const [hackingLevel, setHackingLevel] = React.useState(0);
