@@ -2,3 +2,5 @@ node_modules/
 
 .vscode/*
 !.vscode/launch.json
+
+servers/home/*.txt
