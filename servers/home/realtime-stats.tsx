@@ -1,3 +1,11 @@
+/**
+ * Realtime Stats Display
+ * React-based display showing player money, hacking level, and home RAM usage
+ * 
+ * Usage:
+ *   run realtime-stats.tsx
+ */
+
 // @ts-ignore import React from "react";
 declare const React: any;
 

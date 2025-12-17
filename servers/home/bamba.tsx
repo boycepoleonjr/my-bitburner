@@ -7,11 +7,13 @@
  * - Monitor and root all nodes in the net
  * - Deploy grow/weaken/hack scripts to all nodes in the net
  * - Maximize thread allocation for grow/weaken/hack operations
- * - 
  *
  * Usage: 
  *   run bamba.tsx [target]        - Deploy grow operations (or target specific server)
  *   run bamba.tsx monitor [ms]    - Monitor all servers (default 5000ms interval)
+ * 
+ * @arg {string} target - Target server hostname or "monitor" for monitor mode (optional)
+ * @arg {number} interval - Monitor refresh interval in ms (default: 5000, only with monitor mode)
  */
 
 // @ts-ignore import React from "react";

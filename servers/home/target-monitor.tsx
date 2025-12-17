@@ -10,6 +10,8 @@
  *   run target-monitor.tsx           - Monitor all targets from all modules
  *   run target-monitor.tsx xp        - Monitor XP farmer targets only
  *   run target-monitor.tsx early     - Monitor early game targets only
+ * 
+ * @arg {string} mode - Filter mode: "all", "xp", or "early" (default: all)
  */
 
 // @ts-ignore import React from "react";

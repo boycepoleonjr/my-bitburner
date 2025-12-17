@@ -4,6 +4,8 @@
  * 
  * Usage:
  *   run triumph.tsx
+ * 
+ * @arg {number} interval - Refresh interval in ms (default: 500)
  */
 
 // @ts-ignore import React from "react";
@@ -17,12 +19,20 @@ interface ExecutionLog {
   timestamp: Date;
 }
 
+interface ArgInfo {
+  name: string;
+  type: 'string' | 'number' | 'boolean';
+  description: string;
+  optional: boolean;
+}
+
 interface FileInfo {
   filename: string;
   type: 'script' | 'text' | 'contract' | 'program' | 'other';
   extension: string;
   executable: boolean;
   ramUsage: number | null;
+  args: ArgInfo[];
 }
 
 interface RepoState {
@@ -40,6 +50,134 @@ function loadRepo(): RepoState | null {
   } catch {
     return null;
   }
+}
+
+/**
+ * Script Button Component - handles scripts with optional arguments
+ */
+function ScriptButton({ 
+  file, 
+  onRun 
+}: { 
+  file: FileInfo; 
+  onRun: (script: string, ...args: (string | number | boolean)[]) => void;
+}) {
+  const [expanded, setExpanded] = React.useState(false);
+  const [argValues, setArgValues] = React.useState({} as Record<string, string>);
+
+  const hasArgs = file.args && file.args.length > 0;
+
+  const handleRun = () => {
+    if (!hasArgs) {
+      onRun(file.filename);
+      return;
+    }
+
+    // Convert arg values to proper types
+    const args: (string | number | boolean)[] = file.args.map(arg => {
+      const value = argValues[arg.name] || '';
+      if (arg.type === 'number') {
+        return value ? Number(value) : 0;
+      }
+      if (arg.type === 'boolean') {
+        return value.toLowerCase() === 'true' || value === '1';
+      }
+      return value;
+    });
+
+    onRun(file.filename, ...args);
+    setExpanded(false);
+  };
+
+  const buttonStyle = {
+    backgroundColor: THEME.bgDark,
+    color: THEME.primary,
+    border: `1px solid ${THEME.border}`,
+    padding: '8px 12px',
+    fontFamily: 'monospace',
+    fontSize: '10px',
+    cursor: 'pointer',
+    textShadow: `0 0 8px ${THEME.primary}`,
+    boxShadow: `0 0 10px ${THEME.dim}`,
+    textAlign: 'left' as const,
+    width: '100%',
+  };
+
+  const inputStyle = {
+    backgroundColor: THEME.bgDark,
+    color: THEME.primary,
+    border: `1px solid ${THEME.borderDim}`,
+    padding: '4px 6px',
+    fontFamily: 'monospace',
+    fontSize: '9px',
+    width: '100%',
+    marginTop: '4px',
+  };
+
+  return (
+    <div style={{ position: 'relative' }}>
+      <button
+        onClick={hasArgs ? () => setExpanded(!expanded) : handleRun}
+        style={buttonStyle}
+      >
+        <div>
+          {'> '}{file.filename.replace(/\.[^.]+$/, '')}
+          {hasArgs && <span style={{ color: THEME.tertiary }}> [...]</span>}
+        </div>
+        {file.ramUsage !== null && (
+          <div style={{ color: THEME.tertiary, fontSize: '9px', marginTop: '2px' }}>
+            RAM: {file.ramUsage.toFixed(2)} GB
+          </div>
+        )}
+      </button>
+
+      {/* Expanded args panel */}
+      {expanded && hasArgs && (
+        <div
+          style={{
+            position: 'absolute',
+            top: '100%',
+            left: 0,
+            right: 0,
+            zIndex: 100,
+            backgroundColor: THEME.bgPanel,
+            border: `1px solid ${THEME.border}`,
+            padding: '8px',
+            marginTop: '2px',
+            boxShadow: `0 0 15px ${THEME.dim}`,
+          }}
+        >
+          {file.args.map(arg => (
+            <div key={arg.name} style={{ marginBottom: '6px' }}>
+              <label style={{ fontSize: '9px', color: THEME.textDim }}>
+                {arg.name}
+                <span style={{ color: THEME.dim }}> ({arg.type})</span>
+                {arg.optional && <span style={{ color: THEME.tertiary }}> opt</span>}
+              </label>
+              <input
+                type={arg.type === 'number' ? 'number' : 'text'}
+                value={argValues[arg.name] || ''}
+                onChange={e => setArgValues(prev => ({ ...prev, [arg.name]: e.target.value }))}
+                placeholder={arg.description}
+                style={inputStyle}
+              />
+            </div>
+          ))}
+          <button
+            onClick={handleRun}
+            style={{
+              ...buttonStyle,
+              marginTop: '8px',
+              textAlign: 'center' as const,
+              backgroundColor: THEME.tertiary,
+            }}
+          >
+            RUN
+          </button>
+        </div>
+      )}
+    </div>
+  );
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -89,7 +227,7 @@ function TriumphUI({ interval }: { interval: number }) {
   }, [interval]);
 
   const runScript = (script: string, ...args: (string | number | boolean)[]) => {
-    nsRef.exec(script, 'home', ...args);
+    nsRef.exec(script, 'home', { threads: 1 }, ...args);
     setExecLog(prev => {
       const newLog = [{ script, args, timestamp: new Date() }, ...prev];
       return newLog.slice(0, 5); // Keep last 5
@@ -192,29 +330,7 @@ function TriumphUI({ interval }: { interval: number }) {
             </div>
           ) : (
             executableScripts.map((file) => (
-              <button
-                key={file.filename}
-                onClick={() => runScript(file.filename)}
-                style={{
-                  backgroundColor: THEME.bgDark,
-                  color: THEME.primary,
-                  border: `1px solid ${THEME.border}`,
-                  padding: '8px 12px',
-                  fontFamily: 'monospace',
-                  fontSize: '10px',
-                  cursor: 'pointer',
-                  textShadow: `0 0 8px ${THEME.primary}`,
-                  boxShadow: `0 0 10px ${THEME.dim}`,
-                  textAlign: 'left',
-                }}
-              >
-                <div>{'> '}{file.filename.replace(/\.[^.]+$/, '')}</div>
-                {file.ramUsage !== null && (
-                  <div style={{ color: THEME.tertiary, fontSize: '9px', marginTop: '2px' }}>
-                    RAM: {file.ramUsage.toFixed(2)} GB
-                  </div>
-                )}
-              </button>
+              <ScriptButton key={file.filename} file={file} onRun={runScript} />
             ))
           )}
         </div>

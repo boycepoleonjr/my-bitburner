@@ -12,6 +12,8 @@
  * Usage: 
  *   run server-info.ts        - Display ranked list of all servers
  *   run server-info.ts [N]    - Show top N servers (default: all)
+ * 
+ * @arg {number} limit - Number of servers to display (default: all)
  */
 
 export interface ServerInfo {

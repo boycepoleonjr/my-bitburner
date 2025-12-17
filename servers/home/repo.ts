@@ -6,12 +6,20 @@
  *   run repo.ts
  */
 
+interface ArgInfo {
+  name: string;
+  type: 'string' | 'number' | 'boolean';
+  description: string;
+  optional: boolean;
+}
+
 interface FileInfo {
   filename: string;
   type: 'script' | 'text' | 'contract' | 'program' | 'other';
   extension: string;
   executable: boolean;
   ramUsage: number | null;
+  args: ArgInfo[];
 }
 
 interface RepoState {
@@ -44,6 +52,45 @@ function isExecutable(type: FileInfo['type']): boolean {
   return type === 'script' || type === 'program';
 }
 
+/**
+ * Parse @arg tags from JSDoc comment in script content
+ */
+function parseScriptArgs(content: string): ArgInfo[] {
+  const args: ArgInfo[] = [];
+  
+  // Find the first JSDoc block /** ... */
+  const jsdocMatch = content.match(/\/\*\*[\s\S]*?\*\//);
+  if (!jsdocMatch) return args;
+  
+  const jsdoc = jsdocMatch[0];
+  
+  // Match @arg {type} name - description
+  const argRegex = /@arg\s+\{(\w+)\}\s+(\w+)\s*-?\s*(.*)/g;
+  let match;
+  
+  while ((match = argRegex.exec(jsdoc)) !== null) {
+    const [, typeStr, name, description] = match;
+    const type = (['string', 'number', 'boolean'].includes(typeStr.toLowerCase()) 
+      ? typeStr.toLowerCase() 
+      : 'string') as ArgInfo['type'];
+    
+    // Check if optional by looking for "default:" or "optional" in description
+    const descLower = description.toLowerCase();
+    const optional = descLower.includes('default:') || 
+                     descLower.includes('(default') || 
+                     descLower.includes('optional');
+    
+    args.push({
+      name,
+      type,
+      description: description.trim(),
+      optional,
+    });
+  }
+  
+  return args;
+}
+
 export async function main(ns: NS): Promise<void> {
   const server = 'home';
   const outputFile = 'dir-home.json.txt';
@@ -57,11 +104,14 @@ export async function main(ns: NS): Promise<void> {
     const { type, extension } = getFileType(filename);
     const executable = isExecutable(type);
     
-    // Get RAM usage for scripts
+    // Get RAM usage and parse args for scripts
     let ramUsage: number | null = null;
+    let args: ArgInfo[] = [];
     if (type === 'script') {
       try {
         ramUsage = ns.getScriptRam(filename, server);
+        const content = ns.read(filename);
+        args = parseScriptArgs(content);
       } catch {
         ramUsage = null;
       }
@@ -73,6 +123,7 @@ export async function main(ns: NS): Promise<void> {
       extension,
       executable,
       ramUsage,
+      args,
     });
   }
   

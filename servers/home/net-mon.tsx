@@ -4,6 +4,8 @@
  * 
  * Usage:
  *   run network-monitor.tsx [interval]  - Start monitor (default 5000ms interval)
+ * 
+ * @arg {number} interval - Refresh interval in ms (default: 5000)
  */
 
 // @ts-ignore import React from "react";

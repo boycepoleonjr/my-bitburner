@@ -2,6 +2,8 @@
  * Weaken Worker Script
  * VERSION: 1.0.0
  * LAST UPDATED: 2025-12-03
+ * 
+ * @arg {string} target - Target server hostname to weaken
  */
 
 export async function main(ns: NS): Promise<void> {
