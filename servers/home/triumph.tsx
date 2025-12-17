@@ -17,6 +17,31 @@ interface ExecutionLog {
   timestamp: Date;
 }
 
+interface FileInfo {
+  filename: string;
+  type: 'script' | 'text' | 'contract' | 'program' | 'other';
+  extension: string;
+  executable: boolean;
+  ramUsage: number | null;
+}
+
+interface RepoState {
+  timestamp: string;
+  server: string;
+  fileCount: number;
+  files: FileInfo[];
+}
+
+function loadRepo(): RepoState | null {
+  try {
+    const content = nsRef.read('dir-home.json.txt');
+    if (!content) return null;
+    return JSON.parse(content) as RepoState;
+  } catch {
+    return null;
+  }
+}
+
 // ═══════════════════════════════════════════════════════════════
 // THEME COLORS - Terminal Green on Black
 // ═══════════════════════════════════════════════════════════════
@@ -44,11 +69,15 @@ const THEME = {
 function TriumphUI({ interval }: { interval: number }) {
   const [lastUpdate, setLastUpdate] = React.useState(new Date());
   const [execLog, setExecLog] = React.useState([] as ExecutionLog[]);
+  const [repoState, setRepoState] = React.useState(null as RepoState | null);
 
   React.useEffect(() => {
     const update = () => {
       try {
         setLastUpdate(new Date());
+        // Reload repo state on each update
+        const repo = loadRepo();
+        setRepoState(repo);
       } catch (error) {
         // Silently handle errors
       }
@@ -66,6 +95,11 @@ function TriumphUI({ interval }: { interval: number }) {
       return newLog.slice(0, 5); // Keep last 5
     });
   };
+
+  // Get executable scripts (excluding triumph.tsx itself)
+  const executableScripts = repoState?.files.filter(
+    f => f.executable && f.type === 'script' && f.filename !== 'triumph.tsx'
+  ) || [];
 
   return (
     <div
@@ -143,24 +177,46 @@ function TriumphUI({ interval }: { interval: number }) {
           </span>
         </div>
 
-        {/* Commands */}
-        <div style={{ marginTop: '12px' }}>
-          <button
-            onClick={() => runScript('time-is.ts')}
-            style={{
-              backgroundColor: THEME.bgDark,
-              color: THEME.primary,
-              border: `1px solid ${THEME.border}`,
-              padding: '8px 16px',
-              fontFamily: 'monospace',
-              fontSize: '11px',
-              cursor: 'pointer',
-              textShadow: `0 0 8px ${THEME.primary}`,
-              boxShadow: `0 0 10px ${THEME.dim}`,
-            }}
-          >
-            {'> TIME_IS'}
-          </button>
+        {/* Commands Grid */}
+        <div
+          style={{
+            marginTop: '12px',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))',
+            gap: '8px',
+          }}
+        >
+          {executableScripts.length === 0 ? (
+            <div style={{ color: THEME.dim, fontSize: '10px', fontStyle: 'italic' }}>
+              Loading scripts... (run repo.ts first)
+            </div>
+          ) : (
+            executableScripts.map((file) => (
+              <button
+                key={file.filename}
+                onClick={() => runScript(file.filename)}
+                style={{
+                  backgroundColor: THEME.bgDark,
+                  color: THEME.primary,
+                  border: `1px solid ${THEME.border}`,
+                  padding: '8px 12px',
+                  fontFamily: 'monospace',
+                  fontSize: '10px',
+                  cursor: 'pointer',
+                  textShadow: `0 0 8px ${THEME.primary}`,
+                  boxShadow: `0 0 10px ${THEME.dim}`,
+                  textAlign: 'left',
+                }}
+              >
+                <div>{'> '}{file.filename.replace(/\.[^.]+$/, '')}</div>
+                {file.ramUsage !== null && (
+                  <div style={{ color: THEME.tertiary, fontSize: '9px', marginTop: '2px' }}>
+                    RAM: {file.ramUsage.toFixed(2)} GB
+                  </div>
+                )}
+              </button>
+            ))
+          )}
         </div>
       </div>
 
@@ -248,6 +304,15 @@ export async function main(ns: NS): Promise<void> {
   ns.disableLog('ALL');
   ns.clearLog();
   ns.ui.openTail();
+
+  // Run repo.ts on startup to generate dir-home.json.txt
+  const repoPid = ns.exec('repo.ts', 'home');
+  if (repoPid > 0) {
+    // Wait for repo.ts to finish
+    while (ns.isRunning(repoPid)) {
+      await ns.asleep(50);
+    }
+  }
 
   ns.printRaw(<TriumphUI interval={interval} />);
 
