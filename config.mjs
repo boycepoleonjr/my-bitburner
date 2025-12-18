@@ -3,8 +3,6 @@ import { BitburnerPlugin } from 'esbuild-bitburner-plugin';
 
 const createContext = async () => await context({
   entryPoints: [
-    'servers/**/*.js',
-    'servers/**/*.jsx',
     'servers/**/*.ts',
     'servers/**/*.tsx',
   ],
@@ -15,7 +13,7 @@ const createContext = async () => await context({
       port: 12525,
       types: 'NetscriptDefinitions.d.ts',
       mirror: {
-        'servers': ['home'],
+        'game-mirror': ['home'],
       },
       distribute: {
       },
@@ -27,6 +25,7 @@ const createContext = async () => await context({
         if (filename.endsWith('~')) return false;
         return true;
       },
+      pushOnConnect: true,
     })
   ],
   bundle: true,
