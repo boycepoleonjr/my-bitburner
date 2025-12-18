@@ -535,4 +535,3 @@ Use `repeat(auto-fit, minmax(Xpx, 1fr))` for grids that adapt to window size.
 ---
 
 *Style Guide v1.0 - Terminal Green Aesthetic*
-
