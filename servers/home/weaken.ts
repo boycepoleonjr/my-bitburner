@@ -13,9 +13,7 @@ export async function main(ns: NS): Promise<void> {
     return;
   }
 
-  while (true) {
-    await ns.weaken(target);
-  }
+  await ns.weaken(target);
 }
 
 export function autocomplete(data: any): string[] {

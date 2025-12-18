@@ -13,9 +13,7 @@ export async function main(ns: NS): Promise<void> {
     return;
   }
 
-  while (true) {
-    await ns.hack(target);
-  }
+  await ns.hack(target);
 }
 
 export function autocomplete(data: any): string[] {
