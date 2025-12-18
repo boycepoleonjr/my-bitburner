@@ -134,6 +134,9 @@ function ScriptButton({
       {/* Expanded args panel */}
       {expanded && hasArgs && (
         <div
+          onMouseDown={e => e.stopPropagation()}
+          onKeyDown={e => e.stopPropagation()}
+          onClick={e => e.stopPropagation()}
           style={{
             position: 'absolute',
             top: '100%',
@@ -158,6 +161,10 @@ function ScriptButton({
                 type={arg.type === 'number' ? 'number' : 'text'}
                 value={argValues[arg.name] || ''}
                 onChange={e => setArgValues(prev => ({ ...prev, [arg.name]: e.target.value }))}
+                onMouseDown={e => e.stopPropagation()}
+                onFocus={e => e.stopPropagation()}
+                onKeyDown={e => e.stopPropagation()}
+                onClick={e => e.stopPropagation()}
                 placeholder={arg.description}
                 style={inputStyle}
               />
