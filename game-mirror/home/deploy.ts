@@ -23,53 +23,51 @@ interface ServerInfo {
 }
 
 export async function main(ns: NS): Promise<void> {
-  ns.disableLog('ALL');
+  ns.ui.openTail();
   
   const args = ns.flags([['dry-run', false]]);
   const targetArg = args._[0] as string | undefined;
   const dryRun = args['dry-run'] as boolean;
   
-  ns.tprint('═══════════════════════════════════════════════════════');
-  ns.tprint('         EARLY GAME DEPLOYMENT SYSTEM');
-  ns.tprint('═══════════════════════════════════════════════════════');
+  ns.print('═══════════════════════════════════════════════════════');
+  ns.print('         EARLY GAME DEPLOYMENT SYSTEM');
+  ns.print('═══════════════════════════════════════════════════════');
   
   // Step 1: Scan the entire network
-  ns.tprint('\n[1/5] Scanning network...');
+  ns.print('\n[1/5] Scanning network...');
   const allServers = scanNetwork(ns);
-  ns.tprint(`  Found ${allServers.length} servers`);
+  ns.print(`  Found ${allServers.length} servers`);
   
   // Step 2: Gather info and root everything possible
-  ns.tprint('\n[2/5] Analyzing and rooting servers...');
+  ns.print('\n[2/5] Analyzing and rooting servers...');
   const serverInfos = analyzeAndRoot(ns, allServers);
   
   const rootedServers = serverInfos.filter(s => s.hasRoot);
   const hackableServers = serverInfos.filter(s => 
-    s.hasRoot && 
-    s.maxMoney > 0 && 
-    s.hackingRequired <= ns.getHackingLevel()
+    s.hasRoot && s.maxMoney > 0 && s.hackingRequired <= ns.getHackingLevel()
   );
   
-  ns.tprint(`  Rooted: ${rootedServers.length}/${allServers.length} servers`);
-  ns.tprint(`  Hackable: ${hackableServers.length} servers (with money, within hacking level)`);
+  ns.print(`  Rooted: ${rootedServers.length}/${allServers.length} servers`);
+  ns.print(`  Hackable: ${hackableServers.length} servers (with money, within hacking level)`);
   
   // Step 3: Select best target
-  ns.tprint('\n[3/5] Selecting target...');
+  ns.print('\n[3/5] Selecting target...');
   const target = targetArg || selectBestTarget(ns, hackableServers);
   
   if (!target) {
-    ns.tprint('  ERROR: No valid target found!');
-    ns.tprint('  Your hacking level may be too low, or no servers are rooted yet.');
+    ns.print('  ERROR: No valid target found!');
+    ns.print('  Your hacking level may be too low, or no servers are rooted yet.');
     return;
   }
   
   const targetInfo = ns.getServer(target);
-  ns.tprint(`  Target: ${target}`);
-  ns.tprint(`    Max Money: $${ns.formatNumber(targetInfo.moneyMax || 0)}`);
-  ns.tprint(`    Min Security: ${targetInfo.minDifficulty}`);
-  ns.tprint(`    Required Hacking: ${targetInfo.requiredHackingSkill}`);
+  ns.print(`  Target: ${target}`);
+  ns.print(`    Max Money: $${ns.formatNumber(targetInfo.moneyMax || 0)}`);
+  ns.print(`    Min Security: ${targetInfo.minDifficulty}`);
+  ns.print(`    Required Hacking: ${targetInfo.requiredHackingSkill}`);
   
   // Step 4: Deploy worker scripts to all rooted servers
-  ns.tprint('\n[4/5] Deploying worker scripts...');
+  ns.print('\n[4/5] Deploying worker scripts...');
   const serversWithRam = rootedServers.filter(s => s.maxRam > 0);
   let deployCount = 0;
   
@@ -79,16 +77,16 @@ export async function main(ns: NS): Promise<void> {
       deployCount++;
     }
   }
-  ns.tprint(`  Deployed to ${deployCount} servers`);
+  ns.print(`  Deployed to ${deployCount} servers`);
   
   // Step 5: Launch workers on all servers
-  ns.tprint('\n[5/5] Launching workers...');
+  ns.print('\n[5/5] Launching workers...');
   
   if (dryRun) {
-    ns.tprint('  [DRY RUN] Would launch workers on:');
+    ns.print('  [DRY RUN] Would launch workers on:');
     for (const server of serversWithRam) {
       const availRam = server.maxRam - server.usedRam;
-      ns.tprint(`    ${server.hostname}: ${availRam.toFixed(1)} GB available`);
+      ns.print(`    ${server.hostname}: ${availRam.toFixed(1)} GB available`);
     }
     return;
   }
@@ -106,15 +104,15 @@ export async function main(ns: NS): Promise<void> {
   // Launch balanced workers across network
   const stats = launchWorkers(ns, serversWithRam, target, workerRam);
   
-  ns.tprint('\n═══════════════════════════════════════════════════════');
-  ns.tprint('                DEPLOYMENT COMPLETE');
-  ns.tprint('═══════════════════════════════════════════════════════');
-  ns.tprint(`  Target: ${target}`);
-  ns.tprint(`  Hack threads: ${stats.hackThreads}`);
-  ns.tprint(`  Grow threads: ${stats.growThreads}`);
-  ns.tprint(`  Weaken threads: ${stats.weakenThreads}`);
-  ns.tprint(`  Total RAM used: ${stats.ramUsed.toFixed(1)} GB`);
-  ns.tprint('═══════════════════════════════════════════════════════');
+  ns.print('\n═══════════════════════════════════════════════════════');
+  ns.print('                DEPLOYMENT COMPLETE');
+  ns.print('═══════════════════════════════════════════════════════');
+  ns.print(`  Target: ${target}`);
+  ns.print(`  Hack threads: ${stats.hackThreads}`);
+  ns.print(`  Grow threads: ${stats.growThreads}`);
+  ns.print(`  Weaken threads: ${stats.weakenThreads}`);
+  ns.print(`  Total RAM used: ${stats.ramUsed.toFixed(1)} GB`);
+  ns.print('═══════════════════════════════════════════════════════');
 }
 
 /** Recursively scan the entire network */
@@ -146,7 +144,7 @@ function analyzeAndRoot(ns: NS, servers: string[]): ServerInfo[] {
   if (ns.fileExists('HTTPWorm.exe', 'home')) crackers.push({ file: 'HTTPWorm.exe', fn: ns.httpworm });
   if (ns.fileExists('SQLInject.exe', 'home')) crackers.push({ file: 'SQLInject.exe', fn: ns.sqlinject });
   
-  ns.tprint(`  Port crackers available: ${crackers.length}`);
+  ns.print(`  Port crackers available: ${crackers.length}`);
   
   for (const hostname of servers) {
     const server = ns.getServer(hostname);
@@ -165,7 +163,7 @@ function analyzeAndRoot(ns: NS, servers: string[]): ServerInfo[] {
         // Nuke
         try {
           ns.nuke(hostname);
-          ns.tprint(`  [ROOT] ${hostname}`);
+          ns.print(`  [ROOT] ${hostname}`);
         } catch {
           // Failed to nuke
         }
