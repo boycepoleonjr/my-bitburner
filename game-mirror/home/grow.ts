@@ -3,5 +3,9 @@
  * @arg {string} target - Server hostname to grow
  */
 export async function main(ns: NS): Promise<void> {
-  await ns.grow(ns.args[0] as string);
+  const target = ns.args[0] as string;
+  
+  while (true) {
+    await ns.grow(target);
+  }
 }
